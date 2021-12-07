@@ -1,4 +1,4 @@
-class Math {
+class Math : precompile {
   use Complex_2f;
   use Complex_2d;
   

@@ -8,6 +8,10 @@ our $VERSION = '0.01';
 
 SPVM::Math - SPVM Math Functions
 
+=head1 CAUTHION
+
+B<L<SPVM> is yet before 1.0 released. L<SPVM> is changed without warnings. There will be quite a lot of changes until I feel enough good.>
+
 =head1 SYNOPSYS
 
 =head2 Perl
