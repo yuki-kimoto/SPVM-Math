@@ -1,5 +1,9 @@
 Revision history for SPVM::Math
 
+0.03  2021-12-23
+        [CHANGES]
+        * Catch up with latest SPVM.
+
 0.02  2021-12-21
         [CHANGES]
         * Catch up with latest SPVM.
