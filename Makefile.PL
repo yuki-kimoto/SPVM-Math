@@ -26,8 +26,9 @@ WriteMakefile(
             },
         },
     },
-    PREREQ_PM => {
-        'SPVM'              => '0.9500',
+    # SPVM::Builder::Util::API is needed for Makefile.PL
+    CONFIGURE_REQUIRES => {
+        'SPVM'              => '0.9506',
     },
 );
 
