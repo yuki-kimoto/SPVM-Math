@@ -3,8 +3,29 @@ use ExtUtils::MakeMaker;
 
 use strict;
 use warnings;
+use Config;
 
 use SPVM::Builder::Util::API;
+
+# Check supported environment
+{
+  # Currently SPVM doesn't support Alpine Linux
+  
+  
+  my $myuname = $Config{myuname};
+  # Free BSD - "freebsd www3301.sakura.ne.jp 9.1-release-p24 freebsd 9.1-release-p24 #0: thu feb 5 10:03:29 jst 2015 root@www3304.sakura.ne.jp:usrobjusrsrcsyssakura17 amd64"
+  if ($myuname =~ /\bfreebsd\b/i) {
+    my ($major_version, $minor_version);
+    if ($myuname =~ /\b(\d+).(\d+)-release/) {
+      $major_version = $1;
+      $minor_version = $2;
+    }
+    if ($major_version < 10) {
+      warn "SPVM::Math only supports FreeBSD 10+ because old FreeBSD doesn't support C99 math functions correctly. The current FreeBSD version is $major_version.$minor_version";
+      die "OS unsupported\n";
+    }
+  }
+}
 
 WriteMakefile(
     NAME              => 'SPVM::Math',
