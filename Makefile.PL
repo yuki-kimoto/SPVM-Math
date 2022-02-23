@@ -22,8 +22,8 @@ use SPVM::Builder::Util::API;
       $major_version = $1;
       $minor_version = $2;
     }
-    if ($major_version < 10) {
-      warn "SPVM::Math only supports FreeBSD 10+ because old FreeBSD doesn't support C99 math functions correctly. The current FreeBSD version is $major_version.$minor_version";
+    if ($major_version < 12) {
+      warn "SPVM::Math only supports FreeBSD 12+ because old FreeBSD doesn't support C99 math functions correctly. The current FreeBSD version is $major_version.$minor_version";
       die "OS unsupported\n";
     }
   }
