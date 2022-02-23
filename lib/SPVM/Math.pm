@@ -237,6 +237,8 @@ print "($z_ret->{re}, $z_ret->{im})\n";
 
 =head1 CLASS METHODS
 
+The list of class methods of C<Math> module.
+
 =head2 abs
 
   static method abs : int ($x : int);
@@ -775,25 +777,25 @@ The binding to the C<fdimf> function of C language. This function is declared in
 
   static method FE_DOWNWARD : int ()
 
-FE_DOWNWARD macro defined in C language fenv.h.
+The binding to the C<FE_DOWNWARD> macro of C language. This macro is defined in fenv.h.
 
 =head2 FE_TONEAREST
 
   static method FE_TONEAREST : int ()
 
-FE_TONEAREST macro defined in C language fenv.h.
+The binding to the C<FE_TONEAREST> macro of C language. This macro is defined in fenv.h.
 
 =head2 FE_TOWARDZERO
 
   static method FE_TOWARDZERO : int ()
 
-FE_TOWARDZERO macro defined in C language fenv.h.
+The binding to the C<FE_TOWARDZERO> macro of C language. This macro is defined in fenv.h.
 
 =head2 FE_UPWARD
 
   static method FE_UPWARD : int ()
 
-FE_UPWARD macro defined in C language fenv.h.
+The binding to the C<FE_UPWARD> macro of C language. This macro is defined in fenv.h.
 
 =head2 fesetround
 
@@ -865,43 +867,43 @@ The binding to the C<fmodf> function of C language. This function is declared in
 
   static method FP_ILOGB0 : int ()
 
-FP_ILOGB0 macro defined in C language fenv.h.
+The binding to the C<FP_ILOGB0> macro of C language. This macro is defined in fenv.h.
 
 =head2 FP_ILOGBNAN
 
   static method FP_ILOGBNAN : int ()
 
-FP_ILOGBNAN macro defined in C language fenv.h.
+The binding to the C<FP_ILOGBNAN> macro of C language. This macro is defined in fenv.h.
 
 =head2 FP_INFINITE
 
   static method FP_INFINITE : int ()
 
-FP_INFINITE macro defined in C language fenv.h.
+The binding to the C<FP_INFINITE> macro of C language. This macro is defined in fenv.h.
 
 =head2 FP_NAN
 
   static method FP_NAN : int ()
 
-FP_NAN macro defined in C language fenv.h.
+The binding to the C<FP_NAN> macro of C language. This macro is defined in fenv.h.
 
 =head2 FP_ZERO
 
   static method FP_ZERO : int ()
 
-FP_ZERO macro defined in C language fenv.h.
+The binding to the C<FP_ZERO> macro of C language. This macro is defined in fenv.h.
 
 =head2 fpclassify
 
   static method fpclassify : int ($x : double)
 
-fpclassify macro defined in C language C<math.h>. This method receives a double value.
+The binding to the C<fpclassify> macro of C language. This macro is defined in C<math.h>. This method receives a double value.
 
 =head2 fpclassifyf
 
   static method fpclassifyf : int ($x : float)
 
-fpclassify macro defined in C language C<math.h> for float type. This method receives a float value.
+The binding to the C<fpclassify> macro of C language. This macro is defined in C<math.h> for float type. This method receives a float value.
 
 =head2 frexp
 
@@ -919,13 +921,13 @@ The binding to the C<frexpf> function of C language. This function is declared i
 
   static method HUGE_VAL : double ()
 
-HUGE_VAL macro defined in C language C<math.h>.
+The binding to the C<HUGE_VAL> macro of C language. This macro is defined in C<math.h>.
 
 =head2 HUGE_VALF
 
   static method HUGE_VALF : float ()
 
-HUGE_VALF macro defined in C language C<math.h>.
+The binding to the C<HUGE_VALF> macro of C language. This macro is defined in C<math.h>.
 
 =head2 hypot
 
@@ -955,7 +957,7 @@ The binding to the C<ilogbf> function of C language. This function is declared i
 
   static method INFINITY : double ()
 
-INFINITY macro defined in C language C<math.h>. This method returns a double value.
+The binding to the C<INFINITY> macro of C language. This macro is defined in C<math.h>. This method returns a double value.
 
 =head2 INFINITYF
 
@@ -967,109 +969,109 @@ INFINITY macro for float type defined in C language C<math.h>. This method retur
 
   static method isfinite : int ($x : double)
 
-isfinite macro defined in C language C<math.h>. This method receives a double value.
+The binding to the C<isfinite> macro of C language. This macro is defined in C<math.h>. This method receives a double value.
 
 =head2 isfinitef
 
   static method isfinitef : int($x : float)
 
-isfinite macro defined in C language C<math.h> for float type. This method receives a float value.
+The binding to the C<isfinite> macro of C language. This macro is defined in C<math.h> for float type. This method receives a float value.
 
 =head2 isgreater
 
   static method isgreater : int ($x1 : double, $x2 : double)
 
-isgreater macro defined in C language C<math.h>. This method receives two double values.
+The binding to the C<isgreater> macro of C language. This macro is defined in C<math.h>. This method receives two double values.
 
 =head2 isgreaterequal
 
   static method isgreaterequal : int ($x1 : double, $x2 : double)
 
-isgreaterequal macro defined in C language C<math.h>. This method receives two double values.
+The binding to the C<isgreaterequal> macro of C language. This macro is defined in C<math.h>. This method receives two double values.
 
 =head2 isgreaterequalf
 
   static method isgreaterequalf : int ($x1 : float, $x2 : float)
 
-isgreaterequal macro defined in C language C<math.h>. This method receives two float values.
+The binding to the C<isgreaterequal> macro of C language. This macro is defined in C<math.h>. This method receives two float values.
 
 =head2 isgreaterf
 
   static method isgreaterf : int ($x1 : float, $x2 : float)
 
-isgreater macro defined in C language C<math.h>. This method receives two float values.
+The binding to the C<isgreater> macro of C language. This macro is defined in C<math.h>. This method receives two float values.
 
 =head2 isinf
 
   static method isinf : int ($x : double)
 
-isinf macro defined in C language C<math.h>. This method receives a double value.
+The binding to the C<isinf> macro of C language. This macro is defined in C<math.h>. This method receives a double value.
 
 =head2 isinff
 
   static method isinff : int($x : float)
 
-isinf macro defined in C language C<math.h>. This method receives a float value.
+The binding to the C<isinf> macro of C language. This macro is defined in C<math.h>. This method receives a float value.
 
 =head2 isless
 
   static method isless : int ($x1 : double, $x2 : double)
 
-isless macro defined in C language C<math.h>. This method receives two double values.
+The binding to the C<isless> macro of C language. This macro is defined in C<math.h>. This method receives two double values.
 
 =head2 islessequal
 
   static method islessequal : int ($x1 : double, $x2 : double)
 
-islessequal macro defined in C language C<math.h>. This method receives two double values.
+The binding to the C<islessequal> macro of C language. This macro is defined in C<math.h>. This method receives two double values.
 
 =head2 islessequalf
 
   static method islessequalf : int ($x1 : float, $x2 : float)
 
-islessequalf macro defined in C language C<math.h>. This method receives two float values.
+The binding to the C<islessequalf> macro of C language. This macro is defined in C<math.h>. This method receives two float values.
 
 =head2 islessf
 
   static method islessf : int ($x1 : float, $x2 : float)
 
-islessf macro defined in C language C<math.h>. This method receives two float values.
+The binding to the C<islessf> macro of C language. This macro is defined in C<math.h>. This method receives two float values.
 
 =head2 islessgreater
 
   static method islessgreater : int ($x1 : double, $x2 : double)
 
-islessgreater macro defined in C language C<math.h>. This method receives two double values.
+The binding to the C<islessgreater> macro of C language. This macro is defined in C<math.h>. This method receives two double values.
 
 =head2 islessgreaterf
 
   static method islessgreaterf : int ($x1 : float, $x2 : float)
 
-islessgreater macro defined in C language C<math.h>. This method receives two float values.
+The binding to the C<islessgreater> macro of C language. This macro is defined in C<math.h>. This method receives two float values.
 
 =head2 isnan
 
   static method isnan : int ($x : double)
 
-isnan macro defined in C language C<math.h>. This method receives a double value.
+The binding to the C<isnan> macro of C language. This macro is defined in C<math.h>. This method receives a double value.
 
 =head2 isnanf
 
   static method isnanf : int ($x : float)
 
-isnanf macro defined in C language C<math.h>. This method receives a float value.
+The binding to the C<isnanf> macro of C language. This macro is defined in C<math.h>. This method receives a float value.
 
 =head2 isunordered
 
   static method isunordered : int ($x1 : double, $x2 : double)
 
-isunordered macro defined in C language C<math.h>. This method receives two double values.
+The binding to the C<isunordered> macro of C language. This macro is defined in C<math.h>. This method receives two double values.
 
 =head2 isunorderedf
 
   static method isunorderedf : int ($x1 : float, $x2 : float)
 
-isunorderedf macro defined in C language C<math.h>. This method receives two float values.
+The binding to the C<isunorderedf> macro of C language. This macro is defined in C<math.h>. This method receives two float values.
 
 =head2 labs
 
@@ -1189,7 +1191,7 @@ The binding to the C<modff> function of C language. This function is declared in
 
   static method NAN : double ()
 
-NAN macro defined in C language C<math.h>. This method return a double value.
+The binding to the C<NAN> macro of C language. This macro is defined in C<math.h>. This method return a double value.
 
 =head2 nan
 
@@ -1203,7 +1205,7 @@ String must be defined, otherwise a exception occurs.
 
   static method NANF : float ()
 
-NAN macro defined in C language C<math.h>. This method return a float value.
+The binding to the C<NAN> macro of C language. This macro is defined in C<math.h>. This method return a float value.
 
 =head2 nanf
 
