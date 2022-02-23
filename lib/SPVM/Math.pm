@@ -6,11 +6,11 @@ our $VERSION = '0.08';
 
 =head1 NAME
 
-SPVM::Math - SPVM Math Functions
+SPVM::Math - Math Functions
 
 =head1 CAUTHION
 
-B<L<SPVM> is yet before 1.0 released. L<SPVM> is changed without warnings. There will be quite a lot of changes until I feel enough good.>
+B<The SPVM::Math module depends on the L<SPVM> module. The L<SPVM> module is yet before 1.0 released. The beta tests are doing. There will be a little reasonable changes yet.>
 
 =head1 SYNOPSYS
 
@@ -28,11 +28,11 @@ B<L<SPVM> is yet before 1.0 released. L<SPVM> is changed without warnings. There
 
 =head1 DESCRIPTION
 
-The B<Math> module defines mathmatical functions that contains C99 math functions.
+The C<Math> class defines mathmatical functions that contains C99 math functions.
 
 =head1 CLASS METHODS
 
-The list of class methods of C<Math> module.
+The list of class methods of C<Math> class.
 
 =head2 abs
 
