@@ -1217,3 +1217,9 @@ The binding to the C<trunc> function of C language. This function is declared in
   static method truncf : float ($x : float)
 
 The binding to the C<truncf> function of C language. This function is declared in C<math.h>.
+
+=head1 Copyright & License
+
+Copyright (c) 2023 Yuki Kimoto
+
+MIT License
