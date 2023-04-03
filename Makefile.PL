@@ -39,7 +39,7 @@ unless ($meta) {
   }
 }
 
-my %configure_and_runtime_requires = ('SPVM' => '0.9691');
+my %configure_and_runtime_requires = ('SPVM' => '0.9701');
 WriteMakefile(
   NAME              => 'SPVM::Math',
   VERSION_FROM      => 'lib/SPVM/Math.pm', # finds $VERSION
