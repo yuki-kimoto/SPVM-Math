@@ -334,13 +334,13 @@ Calls the C<conjf> function of the C language defined in C<complex.h>.
 
 =head2 copysign
 
-  static method copysign : double ($x1 : double, $x2 : double)
+  static method copysign : double ($x : double, $y : double)
 
 Calls the C<copysign> function of the C language defined in C<math.h>.
 
 =head2 copysignf
 
-  static method copysignf : float ($x1 : float, $x2 : float)
+  static method copysignf : float ($x : float, $y : float)
 
 Calls the C<copysignf> function of the C language defined in C<math.h>.
 
@@ -544,13 +544,13 @@ Calls the C<fabsf> function of the C language defined in C<math.h>.
 
 =head2 fdim
 
-  static method fdim : double ($x1 : double, $x2 : double)
+  static method fdim : double ($x : double, $y : double)
 
 Calls the C<fdim> function of the C language defined in C<math.h>.
 
 =head2 fdimf
 
-  static method fdimf : float ($x1 : float, $x2 : float)
+  static method fdimf : float ($x : float, $y : float)
 
 Calls the C<fdimf> function of the C language defined in C<math.h>.
 
@@ -598,49 +598,49 @@ Calls the C<floorf> function of the C language defined in C<math.h>.
 
 =head2 fma
 
-  static method fma : double ($x1 : double, $x2 : double, $x3 : double)
+  static method fma : double ($x : double, $y : double, $x3 : double)
 
 Calls the C<fma> function of the C language defined in C<math.h>.
 
 =head2 fmaf
 
-  static method fmaf : float ($x1 : float, $x2 : float, $x3 : float)
+  static method fmaf : float ($x : float, $y : float, $x3 : float)
 
 Calls the C<fmaf> function of the C language defined in C<math.h>.
 
 =head2 fmax
 
-  static method fmax : double ($x1 : double, $x2 : double)
+  static method fmax : double ($x : double, $y : double)
 
 Calls the C<fmax> function of the C language defined in C<math.h>.
 
 =head2 fmaxf
 
-  static method fmaxf : float ($x1 : float, $x2 : float)
+  static method fmaxf : float ($x : float, $y : float)
 
 Calls the C<fmaxf> function of the C language defined in C<math.h>.
 
 =head2 fmin
 
-  static method fmin : double ($x1 : double, $x2 : double)
+  static method fmin : double ($x : double, $y : double)
 
 Calls the C<fmin> function of the C language defined in C<math.h>.
 
 =head2 fminf
 
-  static method fminf : float ($x1 : float, $x2 : float)
+  static method fminf : float ($x : float, $y : float)
 
 Calls the C<fminf> function of the C language defined in C<math.h>.
 
 =head2 fmod
 
-  static method fmod : double ($x1 : double, $x2 : double)
+  static method fmod : double ($x : double, $y : double)
 
 Calls the C<fmod> function of the C language defined in C<math.h>.
 
 =head2 fmodf
 
-  static method fmodf : float ($x1 : float, $x2 : float)
+  static method fmodf : float ($x : float, $y : float)
 
 Calls the C<fmodf> function of the C language defined in C<math.h>.
 
@@ -760,25 +760,25 @@ Calls the C<isfinite> macro of the C language defined in C<math.h> with the floa
 
 =head2 isgreater
 
-  static method isgreater : int ($x1 : double, $x2 : double)
+  static method isgreater : int ($x : double, $y : double)
 
 Calls the C<isgreater> macro of the C language defined in C<math.h> with the double arguments $x and $y.
 
 =head2 isgreaterequal
 
-  static method isgreaterequal : int ($x1 : double, $x2 : double)
+  static method isgreaterequal : int ($x : double, $y : double)
 
-Calls the C<isgreaterequal> macro of the C language defined in C<math.h> with the double arguments $x1 and $x2.
+Calls the C<isgreaterequal> macro of the C language defined in C<math.h> with the double arguments $x and $y.
 
 =head2 isgreaterequalf
 
-  static method isgreaterequalf : int ($x1 : float, $x2 : float)
+  static method isgreaterequalf : int ($x : float, $y : float)
 
-Calls the C<isgreaterequal> macro of the C language defined in C<math.h> with the float arguments $x1 and $x2.
+Calls the C<isgreaterequal> macro of the C language defined in C<math.h> with the float arguments $x and $y.
 
 =head2 isgreaterf
 
-  static method isgreaterf : int ($x1 : float, $x2 : float)
+  static method isgreaterf : int ($x : float, $y : float)
 
 Calls the C<isgreater> macro of the C language defined in C<math.h> with the float arguments $x and $y.
 
@@ -796,39 +796,39 @@ Calls the C<isinf> macro of the C language defined in C<math.h> with the float a
 
 =head2 isless
 
-  static method isless : int ($x1 : double, $x2 : double)
+  static method isless : int ($x : double, $y : double)
 
-Calls the C<isless> macro of the C language defined in C<math.h> with the double arguments $x1 and $x2.
+Calls the C<isless> macro of the C language defined in C<math.h> with the double arguments $x and $y.
 
 =head2 islessequal
 
-  static method islessequal : int ($x1 : double, $x2 : double)
+  static method islessequal : int ($x : double, $y : double)
 
 Calls the C<islessequal> macro of the C language defined in C<math.h> with the double arguments $x and $y.
 
 =head2 islessequalf
 
-  static method islessequalf : int ($x1 : float, $x2 : float)
+  static method islessequalf : int ($x : float, $y : float)
 
-Calls the C<islessequalf> macro of the C language defined in C<math.h> with the float arguments $x1 and $x2.
+Calls the C<islessequalf> macro of the C language defined in C<math.h> with the float arguments $x and $y.
 
 =head2 islessf
 
-  static method islessf : int ($x1 : float, $x2 : float)
+  static method islessf : int ($x : float, $y : float)
 
-Calls the C<islessf> macro of the C language defined in C<math.h> with the float arguments $x1 and $x2.
+Calls the C<islessf> macro of the C language defined in C<math.h> with the float arguments $x and $y.
 
 =head2 islessgreater
 
-  static method islessgreater : int ($x1 : double, $x2 : double)
+  static method islessgreater : int ($x : double, $y : double)
 
-Calls the C<islessgreater> macro of the C language defined in C<math.h> with the double arguments $x1 and $x2.
+Calls the C<islessgreater> macro of the C language defined in C<math.h> with the double arguments $x and $y.
 
 =head2 islessgreaterf
 
-  static method islessgreaterf : int ($x1 : float, $x2 : float)
+  static method islessgreaterf : int ($x : float, $y : float)
 
-Calls the C<islessgreater> macro of the C language defined in C<math.h> with the float arguments $x1 and $x2.
+Calls the C<islessgreater> macro of the C language defined in C<math.h> with the float arguments $x and $y.
 
 =head2 isnan
 
@@ -844,15 +844,15 @@ Calls the C<isnanf> macro of the C language defined in C<math.h> with the float 
 
 =head2 isunordered
 
-  static method isunordered : int ($x1 : double, $x2 : double)
+  static method isunordered : int ($x : double, $y : double)
 
-Calls the C<isunordered> macro of the C language defined in C<math.h> with the double arguments $x1 and $x2.
+Calls the C<isunordered> macro of the C language defined in C<math.h> with the double arguments $x and $y.
 
 =head2 isunorderedf
 
-  static method isunorderedf : int ($x1 : float, $x2 : float)
+  static method isunorderedf : int ($x : float, $y : float)
 
-Calls the C<isunorderedf> macro of the C language defined in C<math.h> with the float arguments $x1 and $x2.
+Calls the C<isunorderedf> macro of the C language defined in C<math.h> with the float arguments $x and $y.
 
 =head2 labs
 
@@ -1014,25 +1014,25 @@ Calls the C<nearbyintf> function of the C language defined in C<math.h>.
 
 =head2 nextafter
 
-  static method nextafter : double ($x1 : double, $x2 : double)
+  static method nextafter : double ($x : double, $y : double)
 
 Calls the C<nextafter> function of the C language defined in C<math.h>.
 
 =head2 nextafterf
 
-  static method nextafterf : float ($x1 : float, $x2 : float)
+  static method nextafterf : float ($x : float, $y : float)
 
 Calls the C<nextafterf> function of the C language defined in C<math.h>.
 
 =head2 nexttoward
 
-  static method nexttoward : double ($x1 : double, $x2 : double)
+  static method nexttoward : double ($x : double, $y : double)
 
 Calls the C<nexttoward> function of the C language defined in C<math.h>.
 
 =head2 nexttowardf
 
-  static method nexttowardf : float ($x1 : float, $x2 : double)
+  static method nexttowardf : float ($x : float, $y : double)
 
 Calls the C<nexttowardf> function of the C language defined in C<math.h>.
 
@@ -1056,25 +1056,25 @@ Calls the C<powf> function of the C language defined in C<math.h>.
 
 =head2 remainder
 
-  static method remainder : double ($x1 : double, $x2 : double)
+  static method remainder : double ($x : double, $y : double)
 
 Calls the C<remainder> function of the C language defined in C<math.h>.
 
 =head2 remainderf
 
-  static method remainderf : float ($x1 : float, $x2 : float)
+  static method remainderf : float ($x : float, $y : float)
 
 Calls the C<remainderf> function of the C language defined in C<math.h>.
 
 =head2 remquo
 
-  static method remquo : double ($x1 : double, $x2 : double, $quo : int*)
+  static method remquo : double ($x : double, $y : double, $quo : int*)
 
 Calls the C<remquo> function of the C language defined in C<math.h>.
 
 =head2 remquof
 
-  static method remquof : float ($x1 : float, $x2 : float, $quo : int*)
+  static method remquof : float ($x : float, $y : float, $quo : int*)
 
 Calls the C<remquof> function of the C language defined in C<math.h>.
 
