@@ -257,10 +257,10 @@ class Math : precompile {
   native static method lroundf : long ($x : float);
   native static method modf : double ($x : double, $intpart : double*);
   native static method modff : float ($x : float, $intpart : float*);
-  native static method nan : double ($str : string);
+  native static method nan : double ($string : string);
   native static method NAN : double ();
   native static method NANF : float ();
-  native static method nanf : float ($str : string);
+  native static method nanf : float ($string : string);
   native static method nearbyint : double ($x : double);
   native static method nearbyintf : float ($x : float);
   native static method nextafter : double ($x1 : double, $x2 : double);
