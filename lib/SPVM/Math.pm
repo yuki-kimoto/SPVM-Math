@@ -6,7 +6,7 @@ our $VERSION = '0.14';
 
 =head1 Name
 
-SPVM::Math - Mathematical functions
+SPVM::Math - Mathematical Functions
 
 =head1 Description
 
