@@ -42,7 +42,7 @@ my $start_memory_blocks_count = SPVM::api->get_memory_blocks_count();
 
 # PI
 {
-  ok(SPVM::TestCase::Math->test_PI);
+  ok(SPVM::TestCase::Math->PI);
   if ($] >= 5.022) {
     my $val = eval "0x1.921fb54442d18p+1";
     cmp_ok(SPVM::Math->PI, '==', $val);
@@ -51,7 +51,7 @@ my $start_memory_blocks_count = SPVM::api->get_memory_blocks_count();
 
 # E
 {
-  ok(SPVM::TestCase::Math->test_E);
+  ok(SPVM::TestCase::Math->E);
   if ($] >= 5.022) {
     my $val = eval "0x1.5bf0a8b145769p+1";
     cmp_ok(SPVM::Math->E, '==', $val);
@@ -59,235 +59,235 @@ my $start_memory_blocks_count = SPVM::api->get_memory_blocks_count();
 }
 
 # Trigonometric functions
-ok(SPVM::TestCase::Math->test_cos);
-ok(SPVM::TestCase::Math->test_cosf);
-ok(SPVM::TestCase::Math->test_sin);
-ok(SPVM::TestCase::Math->test_sinf);
-ok(SPVM::TestCase::Math->test_tan);
-ok(SPVM::TestCase::Math->test_tanf);
-ok(SPVM::TestCase::Math->test_acos);
-ok(SPVM::TestCase::Math->test_acosf);
-ok(SPVM::TestCase::Math->test_asin);
-ok(SPVM::TestCase::Math->test_asinf);
-ok(SPVM::TestCase::Math->test_atan);
-ok(SPVM::TestCase::Math->test_atanf);
+ok(SPVM::TestCase::Math->cos);
+ok(SPVM::TestCase::Math->cosf);
+ok(SPVM::TestCase::Math->sin);
+ok(SPVM::TestCase::Math->sinf);
+ok(SPVM::TestCase::Math->tan);
+ok(SPVM::TestCase::Math->tanf);
+ok(SPVM::TestCase::Math->acos);
+ok(SPVM::TestCase::Math->acosf);
+ok(SPVM::TestCase::Math->asin);
+ok(SPVM::TestCase::Math->asinf);
+ok(SPVM::TestCase::Math->atan);
+ok(SPVM::TestCase::Math->atanf);
 
 # Hyperbolic functions
-ok(SPVM::TestCase::Math->test_cosh);
-ok(SPVM::TestCase::Math->test_coshf);
-ok(SPVM::TestCase::Math->test_sinh);
-ok(SPVM::TestCase::Math->test_sinhf);
-ok(SPVM::TestCase::Math->test_tanh);
-ok(SPVM::TestCase::Math->test_tanhf);
-ok(SPVM::TestCase::Math->test_acosh);
-ok(SPVM::TestCase::Math->test_acoshf);
-ok(SPVM::TestCase::Math->test_asinh);
-ok(SPVM::TestCase::Math->test_asinhf);
-ok(SPVM::TestCase::Math->test_atanh);
-ok(SPVM::TestCase::Math->test_atanhf);
+ok(SPVM::TestCase::Math->cosh);
+ok(SPVM::TestCase::Math->coshf);
+ok(SPVM::TestCase::Math->sinh);
+ok(SPVM::TestCase::Math->sinhf);
+ok(SPVM::TestCase::Math->tanh);
+ok(SPVM::TestCase::Math->tanhf);
+ok(SPVM::TestCase::Math->acosh);
+ok(SPVM::TestCase::Math->acoshf);
+ok(SPVM::TestCase::Math->asinh);
+ok(SPVM::TestCase::Math->asinhf);
+ok(SPVM::TestCase::Math->atanh);
+ok(SPVM::TestCase::Math->atanhf);
 
 # Exponential and logarithmic functions
-ok(SPVM::TestCase::Math->test_exp);
-ok(SPVM::TestCase::Math->test_expf);
-ok(SPVM::TestCase::Math->test_exp2);
-ok(SPVM::TestCase::Math->test_exp2f);
-ok(SPVM::TestCase::Math->test_expm1);
-ok(SPVM::TestCase::Math->test_expm1f);
-ok(SPVM::TestCase::Math->test_frexp);
-ok(SPVM::TestCase::Math->test_frexpf);
-ok(SPVM::TestCase::Math->test_ilogb);
-ok(SPVM::TestCase::Math->test_ilogbf);
-ok(SPVM::TestCase::Math->test_ldexp);
-ok(SPVM::TestCase::Math->test_ldexpf);
-ok(SPVM::TestCase::Math->test_log);
-ok(SPVM::TestCase::Math->test_logf);
-ok(SPVM::TestCase::Math->test_log10);
-ok(SPVM::TestCase::Math->test_log10f);
-ok(SPVM::TestCase::Math->test_log1p);
-ok(SPVM::TestCase::Math->test_log1pf);
-ok(SPVM::TestCase::Math->test_log2);
-ok(SPVM::TestCase::Math->test_log2f);
-ok(SPVM::TestCase::Math->test_logb);
-ok(SPVM::TestCase::Math->test_logbf);
-ok(SPVM::TestCase::Math->test_modf);
-ok(SPVM::TestCase::Math->test_modff);
-ok(SPVM::TestCase::Math->test_scalbn);
-ok(SPVM::TestCase::Math->test_scalbnf);
-ok(SPVM::TestCase::Math->test_scalbln);
-ok(SPVM::TestCase::Math->test_scalblnf);
+ok(SPVM::TestCase::Math->exp);
+ok(SPVM::TestCase::Math->expf);
+ok(SPVM::TestCase::Math->exp2);
+ok(SPVM::TestCase::Math->exp2f);
+ok(SPVM::TestCase::Math->expm1);
+ok(SPVM::TestCase::Math->expm1f);
+ok(SPVM::TestCase::Math->frexp);
+ok(SPVM::TestCase::Math->frexpf);
+ok(SPVM::TestCase::Math->ilogb);
+ok(SPVM::TestCase::Math->ilogbf);
+ok(SPVM::TestCase::Math->ldexp);
+ok(SPVM::TestCase::Math->ldexpf);
+ok(SPVM::TestCase::Math->log);
+ok(SPVM::TestCase::Math->logf);
+ok(SPVM::TestCase::Math->log10);
+ok(SPVM::TestCase::Math->log10f);
+ok(SPVM::TestCase::Math->log1p);
+ok(SPVM::TestCase::Math->log1pf);
+ok(SPVM::TestCase::Math->log2);
+ok(SPVM::TestCase::Math->log2f);
+ok(SPVM::TestCase::Math->logb);
+ok(SPVM::TestCase::Math->logbf);
+ok(SPVM::TestCase::Math->modf);
+ok(SPVM::TestCase::Math->modff);
+ok(SPVM::TestCase::Math->scalbn);
+ok(SPVM::TestCase::Math->scalbnf);
+ok(SPVM::TestCase::Math->scalbln);
+ok(SPVM::TestCase::Math->scalblnf);
 
 #absolute value functions
 {
-  ok(SPVM::TestCase::Math->test_abs);
-  ok(SPVM::TestCase::Math->test_labs);
-  ok(SPVM::TestCase::Math->test_fabs);
-  ok(SPVM::TestCase::Math->test_fabsf);
+  ok(SPVM::TestCase::Math->abs);
+  ok(SPVM::TestCase::Math->labs);
+  ok(SPVM::TestCase::Math->fabs);
+  ok(SPVM::TestCase::Math->fabsf);
 }
 
 # Power function
-ok(SPVM::TestCase::Math->test_cbrt);
-ok(SPVM::TestCase::Math->test_cbrtf);
-ok(SPVM::TestCase::Math->test_hypot);
-ok(SPVM::TestCase::Math->test_hypotf);
-ok(SPVM::TestCase::Math->test_pow);
-ok(SPVM::TestCase::Math->test_powf);
-ok(SPVM::TestCase::Math->test_sqrt);
-ok(SPVM::TestCase::Math->test_sqrtf);
+ok(SPVM::TestCase::Math->cbrt);
+ok(SPVM::TestCase::Math->cbrtf);
+ok(SPVM::TestCase::Math->hypot);
+ok(SPVM::TestCase::Math->hypotf);
+ok(SPVM::TestCase::Math->pow);
+ok(SPVM::TestCase::Math->powf);
+ok(SPVM::TestCase::Math->sqrt);
+ok(SPVM::TestCase::Math->sqrtf);
 
 # Error function and gamma functions
-ok(SPVM::TestCase::Math->test_erf);
-ok(SPVM::TestCase::Math->test_erff);
-ok(SPVM::TestCase::Math->test_erfc);
-ok(SPVM::TestCase::Math->test_erfcf);
-ok(SPVM::TestCase::Math->test_lgamma);
-ok(SPVM::TestCase::Math->test_lgammaf);
-ok(SPVM::TestCase::Math->test_tgamma);
-ok(SPVM::TestCase::Math->test_tgammaf);
+ok(SPVM::TestCase::Math->erf);
+ok(SPVM::TestCase::Math->erff);
+ok(SPVM::TestCase::Math->erfc);
+ok(SPVM::TestCase::Math->erfcf);
+ok(SPVM::TestCase::Math->lgamma);
+ok(SPVM::TestCase::Math->lgammaf);
+ok(SPVM::TestCase::Math->tgamma);
+ok(SPVM::TestCase::Math->tgammaf);
 
 # Nearest integer functions
-ok(SPVM::TestCase::Math->test_ceil);
-ok(SPVM::TestCase::Math->test_ceilf);
-ok(SPVM::TestCase::Math->test_floor);
-ok(SPVM::TestCase::Math->test_floorf);
-ok(SPVM::TestCase::Math->test_nearbyint);
-ok(SPVM::TestCase::Math->test_nearbyintf);
-ok(SPVM::TestCase::Math->test_round);
-ok(SPVM::TestCase::Math->test_roundf);
-ok(SPVM::TestCase::Math->test_lround);
-ok(SPVM::TestCase::Math->test_lroundf);
-ok(SPVM::TestCase::Math->test_trunc);
-ok(SPVM::TestCase::Math->test_truncf);
+ok(SPVM::TestCase::Math->ceil);
+ok(SPVM::TestCase::Math->ceilf);
+ok(SPVM::TestCase::Math->floor);
+ok(SPVM::TestCase::Math->floorf);
+ok(SPVM::TestCase::Math->nearbyint);
+ok(SPVM::TestCase::Math->nearbyintf);
+ok(SPVM::TestCase::Math->round);
+ok(SPVM::TestCase::Math->roundf);
+ok(SPVM::TestCase::Math->lround);
+ok(SPVM::TestCase::Math->lroundf);
+ok(SPVM::TestCase::Math->trunc);
+ok(SPVM::TestCase::Math->truncf);
 
 # Surplus functions
-ok(SPVM::TestCase::Math->test_fmod);
-ok(SPVM::TestCase::Math->test_fmodf);
-ok(SPVM::TestCase::Math->test_remainder);
-ok(SPVM::TestCase::Math->test_remainderf);
-ok(SPVM::TestCase::Math->test_remquo);
-ok(SPVM::TestCase::Math->test_remquof);
+ok(SPVM::TestCase::Math->fmod);
+ok(SPVM::TestCase::Math->fmodf);
+ok(SPVM::TestCase::Math->remainder);
+ok(SPVM::TestCase::Math->remainderf);
+ok(SPVM::TestCase::Math->remquo);
+ok(SPVM::TestCase::Math->remquof);
 
 # Real number operation functions
-ok(SPVM::TestCase::Math->test_copysign);
-ok(SPVM::TestCase::Math->test_copysignf);
-ok(SPVM::TestCase::Math->test_nan);
-ok(SPVM::TestCase::Math->test_nanf);
-ok(SPVM::TestCase::Math->test_nextafter);
-ok(SPVM::TestCase::Math->test_nextafterf);
-ok(SPVM::TestCase::Math->test_nexttoward);
-ok(SPVM::TestCase::Math->test_nexttowardf);
+ok(SPVM::TestCase::Math->copysign);
+ok(SPVM::TestCase::Math->copysignf);
+ok(SPVM::TestCase::Math->nan);
+ok(SPVM::TestCase::Math->nanf);
+ok(SPVM::TestCase::Math->nextafter);
+ok(SPVM::TestCase::Math->nextafterf);
+ok(SPVM::TestCase::Math->nexttoward);
+ok(SPVM::TestCase::Math->nexttowardf);
 
 # Maximum, minimum and positive difference functions
-ok(SPVM::TestCase::Math->test_fdim);
-ok(SPVM::TestCase::Math->test_fdimf);
-ok(SPVM::TestCase::Math->test_fmax);
-ok(SPVM::TestCase::Math->test_fmaxf);
-ok(SPVM::TestCase::Math->test_fmin);
-ok(SPVM::TestCase::Math->test_fminf);
+ok(SPVM::TestCase::Math->fdim);
+ok(SPVM::TestCase::Math->fdimf);
+ok(SPVM::TestCase::Math->fmax);
+ok(SPVM::TestCase::Math->fmaxf);
+ok(SPVM::TestCase::Math->fmin);
+ok(SPVM::TestCase::Math->fminf);
 
 # Floating point multiplication and additions
-ok(SPVM::TestCase::Math->test_fma);
-ok(SPVM::TestCase::Math->test_fmaf);
+ok(SPVM::TestCase::Math->fma);
+ok(SPVM::TestCase::Math->fmaf);
 
 # Classification
-ok(SPVM::TestCase::Math->test_fpclassify);
-ok(SPVM::TestCase::Math->test_fpclassifyf);
-ok(SPVM::TestCase::Math->test_isfinite);
-ok(SPVM::TestCase::Math->test_isfinitef);
-ok(SPVM::TestCase::Math->test_isinf);
-ok(SPVM::TestCase::Math->test_isinff);
-ok(SPVM::TestCase::Math->test_isnan);
-ok(SPVM::TestCase::Math->test_isnanf);
-ok(SPVM::TestCase::Math->test_signbit);
-ok(SPVM::TestCase::Math->test_signbitf);
+ok(SPVM::TestCase::Math->fpclassify);
+ok(SPVM::TestCase::Math->fpclassifyf);
+ok(SPVM::TestCase::Math->isfinite);
+ok(SPVM::TestCase::Math->isfinitef);
+ok(SPVM::TestCase::Math->isinf);
+ok(SPVM::TestCase::Math->isinff);
+ok(SPVM::TestCase::Math->isnan);
+ok(SPVM::TestCase::Math->isnanf);
+ok(SPVM::TestCase::Math->signbit);
+ok(SPVM::TestCase::Math->signbitf);
 
 # Comparison
-ok(SPVM::TestCase::Math->test_isgreater);
-ok(SPVM::TestCase::Math->test_isgreaterf);
-ok(SPVM::TestCase::Math->test_isgreaterequal);
-ok(SPVM::TestCase::Math->test_isgreaterequalf);
-ok(SPVM::TestCase::Math->test_isless);
-ok(SPVM::TestCase::Math->test_islessf);
-ok(SPVM::TestCase::Math->test_islessequal);
-ok(SPVM::TestCase::Math->test_islessequalf);
-ok(SPVM::TestCase::Math->test_islessgreater);
-ok(SPVM::TestCase::Math->test_islessgreaterf);
-ok(SPVM::TestCase::Math->test_isunordered);
-ok(SPVM::TestCase::Math->test_isunorderedf);
+ok(SPVM::TestCase::Math->isgreater);
+ok(SPVM::TestCase::Math->isgreaterf);
+ok(SPVM::TestCase::Math->isgreaterequal);
+ok(SPVM::TestCase::Math->isgreaterequalf);
+ok(SPVM::TestCase::Math->isless);
+ok(SPVM::TestCase::Math->islessf);
+ok(SPVM::TestCase::Math->islessequal);
+ok(SPVM::TestCase::Math->islessequalf);
+ok(SPVM::TestCase::Math->islessgreater);
+ok(SPVM::TestCase::Math->islessgreaterf);
+ok(SPVM::TestCase::Math->isunordered);
+ok(SPVM::TestCase::Math->isunorderedf);
 
 # Complex Operations
 {
-  ok(SPVM::TestCase::Math->test_complexf);
-  ok(SPVM::TestCase::Math->test_complex);
-  ok(SPVM::TestCase::Math->test_caddf);
-  ok(SPVM::TestCase::Math->test_cadd);
-  ok(SPVM::TestCase::Math->test_csubf);
-  ok(SPVM::TestCase::Math->test_csub);
-  ok(SPVM::TestCase::Math->test_cmulf);
-  ok(SPVM::TestCase::Math->test_cmul);
-  ok(SPVM::TestCase::Math->test_cscamulf);
-  ok(SPVM::TestCase::Math->test_cscamul);
-  ok(SPVM::TestCase::Math->test_cdivf);
-  ok(SPVM::TestCase::Math->test_cdiv);
+  ok(SPVM::TestCase::Math->complexf);
+  ok(SPVM::TestCase::Math->complex);
+  ok(SPVM::TestCase::Math->caddf);
+  ok(SPVM::TestCase::Math->cadd);
+  ok(SPVM::TestCase::Math->csubf);
+  ok(SPVM::TestCase::Math->csub);
+  ok(SPVM::TestCase::Math->cmulf);
+  ok(SPVM::TestCase::Math->cmul);
+  ok(SPVM::TestCase::Math->cscamulf);
+  ok(SPVM::TestCase::Math->cscamul);
+  ok(SPVM::TestCase::Math->cdivf);
+  ok(SPVM::TestCase::Math->cdiv);
 }
 
 # Complex Functions
 {
-  ok(SPVM::TestCase::Math->test_cacos);
-  ok(SPVM::TestCase::Math->test_cacosf);
+  ok(SPVM::TestCase::Math->cacos);
+  ok(SPVM::TestCase::Math->cacosf);
 
-  ok(SPVM::TestCase::Math->test_casin);
-  ok(SPVM::TestCase::Math->test_casinf);
+  ok(SPVM::TestCase::Math->casin);
+  ok(SPVM::TestCase::Math->casinf);
   
-  ok(SPVM::TestCase::Math->test_catan);
-  ok(SPVM::TestCase::Math->test_catanf);
+  ok(SPVM::TestCase::Math->catan);
+  ok(SPVM::TestCase::Math->catanf);
 
-  ok(SPVM::TestCase::Math->test_ccos);
-  ok(SPVM::TestCase::Math->test_ccosf);
+  ok(SPVM::TestCase::Math->ccos);
+  ok(SPVM::TestCase::Math->ccosf);
 
-  ok(SPVM::TestCase::Math->test_csin);
-  ok(SPVM::TestCase::Math->test_csinf);
+  ok(SPVM::TestCase::Math->csin);
+  ok(SPVM::TestCase::Math->csinf);
 
-  ok(SPVM::TestCase::Math->test_ctan);
-  ok(SPVM::TestCase::Math->test_ctanf);
+  ok(SPVM::TestCase::Math->ctan);
+  ok(SPVM::TestCase::Math->ctanf);
 
-  ok(SPVM::TestCase::Math->test_cacosh);
-  ok(SPVM::TestCase::Math->test_cacoshf);
+  ok(SPVM::TestCase::Math->cacosh);
+  ok(SPVM::TestCase::Math->cacoshf);
 
-  ok(SPVM::TestCase::Math->test_casinh);
-  ok(SPVM::TestCase::Math->test_casinhf);
+  ok(SPVM::TestCase::Math->casinh);
+  ok(SPVM::TestCase::Math->casinhf);
   
-  ok(SPVM::TestCase::Math->test_catanh);
-  ok(SPVM::TestCase::Math->test_catanhf);
+  ok(SPVM::TestCase::Math->catanh);
+  ok(SPVM::TestCase::Math->catanhf);
 
-  ok(SPVM::TestCase::Math->test_ccosh);
-  ok(SPVM::TestCase::Math->test_ccoshf);
+  ok(SPVM::TestCase::Math->ccosh);
+  ok(SPVM::TestCase::Math->ccoshf);
 
-  ok(SPVM::TestCase::Math->test_csinh);
-  ok(SPVM::TestCase::Math->test_csinhf);
+  ok(SPVM::TestCase::Math->csinh);
+  ok(SPVM::TestCase::Math->csinhf);
 
-  ok(SPVM::TestCase::Math->test_ctanh);
-  ok(SPVM::TestCase::Math->test_ctanhf);
+  ok(SPVM::TestCase::Math->ctanh);
+  ok(SPVM::TestCase::Math->ctanhf);
 
-  ok(SPVM::TestCase::Math->test_clog);
-  ok(SPVM::TestCase::Math->test_clogf);
+  ok(SPVM::TestCase::Math->clog);
+  ok(SPVM::TestCase::Math->clogf);
 
-  ok(SPVM::TestCase::Math->test_cabs);
-  ok(SPVM::TestCase::Math->test_cabsf);
+  ok(SPVM::TestCase::Math->cabs);
+  ok(SPVM::TestCase::Math->cabsf);
 
-  ok(SPVM::TestCase::Math->test_carg);
-  ok(SPVM::TestCase::Math->test_cargf);
+  ok(SPVM::TestCase::Math->carg);
+  ok(SPVM::TestCase::Math->cargf);
 
-  ok(SPVM::TestCase::Math->test_conj);
-  ok(SPVM::TestCase::Math->test_conjf);
+  ok(SPVM::TestCase::Math->conj);
+  ok(SPVM::TestCase::Math->conjf);
 
-  ok(SPVM::TestCase::Math->test_cexp);
-  ok(SPVM::TestCase::Math->test_cexpf);
+  ok(SPVM::TestCase::Math->cexp);
+  ok(SPVM::TestCase::Math->cexpf);
 
-  ok(SPVM::TestCase::Math->test_cpow);
-  ok(SPVM::TestCase::Math->test_cpowf);
+  ok(SPVM::TestCase::Math->cpow);
+  ok(SPVM::TestCase::Math->cpowf);
 
-  ok(SPVM::TestCase::Math->test_csqrt);
-  ok(SPVM::TestCase::Math->test_csqrtf);
+  ok(SPVM::TestCase::Math->csqrt);
+  ok(SPVM::TestCase::Math->csqrtf);
 }
 
 # Version
