@@ -9,6 +9,8 @@ BEGIN { $ENV{SPVM_BUILD_DIR} = "$FindBin::Bin/.spvm_build"; }
 use SPVM 'TestCase::Lib::Math';
 use SPVM 'Math';
 
+use SPVM 'Fn';
+use SPVM::Math;
 
 use POSIX();
 use Math::Complex;
@@ -288,6 +290,10 @@ ok(SPVM::TestCase::Lib::Math->test_isunorderedf);
   ok(SPVM::TestCase::Lib::Math->test_csqrtf);
 }
 
+# Version
+{
+  is($SPVM::Math::VERSION, SPVM::Fn->get_version_string('Math'));
+}
 # All object is freed
 my $end_memory_blocks_count = SPVM::api->get_memory_blocks_count();
 is($end_memory_blocks_count, $start_memory_blocks_count);
