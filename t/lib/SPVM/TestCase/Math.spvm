@@ -1,4 +1,4 @@
-class TestCase::Lib::Math {
+class TestCase::Math {
   use Math;
   use Fn;
 
