@@ -135,17 +135,17 @@ class Math : precompile {
     return $z_ret;
   }
   
-  static method complex : Complex_2d ($x : double, $y : double) {
+  static method complex : Complex_2d ($re : double, $im : double) {
     my $z_ret : Complex_2d;
-    $z_ret->{re} = $x;
-    $z_ret->{im} = $y;
+    $z_ret->{re} = $re;
+    $z_ret->{im} = $im;
     return $z_ret;
   }
   
-  static method complexf : Complex_2f ($x : float, $y : float) {
+  static method complexf : Complex_2f ($re : float, $im : float) {
     my $z_ret : Complex_2f;
-    $z_ret->{re} = $x;
-    $z_ret->{im} = $y;
+    $z_ret->{re} = $re;
+    $z_ret->{im} = $im;
     return $z_ret;
   }
   
@@ -171,15 +171,19 @@ class Math : precompile {
   
   static method cscamul : Complex_2d ($c : double, $z : Complex_2d) {
     my $z_ret : Complex_2d;
+    
     $z_ret->{re} = $c * $z->{re};
     $z_ret->{im} = $c * $z->{im};
+    
     return $z_ret;
   }
   
   static method cscamulf : Complex_2f ($c : float, $z : Complex_2f) {
     my $z_ret : Complex_2f;
+    
     $z_ret->{re} = $c * $z->{re};
     $z_ret->{im} = $c * $z->{im};
+    
     return $z_ret;
   }
   
