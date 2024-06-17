@@ -31,7 +31,7 @@ Math class in L<SPVM> has methods for mathematical calculations.
   # Euler's equation
   my $euler_left = Math->cexp(Math->cmul($i, $z));
   my $euler_right = Math->ccos($z) + Math->cmul($i, Math->csin($z));
-  
+
 =head1 Class Methods
 
 =head2 abs
