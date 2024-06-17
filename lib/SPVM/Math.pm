@@ -44,115 +44,115 @@ Calculates the abusolute value of $x and return it.
 
 C<static method acos : double ($x : double);>
 
-Calls the L<acos|https://linux.die.net/man/3/acos> function defined in C<math.h> in the C language and returns its return value.
+Calls L<acos|https://linux.die.net/man/3/acos> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 acosf
 
 C<static method acosf : float ($x : float);>
 
-Calls the L<acosf|https://linux.die.net/man/3/acosf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<acosf|https://linux.die.net/man/3/acosf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 acosh
 
 C<static method acosh : double ($x : double);>
 
-Calls the L<acosh|https://linux.die.net/man/3/acosh> function defined in C<math.h> in the C language and returns its return value.
+Calls L<acosh|https://linux.die.net/man/3/acosh> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 acoshf
 
 C<static method acoshf : float ($x : float);>
 
-Calls the L<acoshf|https://linux.die.net/man/3/acoshf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<acoshf|https://linux.die.net/man/3/acoshf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 asin
 
 C<static method asin : double ($x : double);>
 
-Calls the L<asin|https://linux.die.net/man/3/asin> function defined in C<math.h> in the C language and returns its return value.
+Calls L<asin|https://linux.die.net/man/3/asin> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 asinf
 
 C<static method asinf : float ($x : float);>
 
-Calls the L<asinf|https://linux.die.net/man/3/asinf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<asinf|https://linux.die.net/man/3/asinf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 asinh
 
 C<static method asinh : double ($x : double);>
 
-Calls the L<asinh|https://linux.die.net/man/3/asinh> function defined in C<math.h> in the C language and returns its return value.
+Calls L<asinh|https://linux.die.net/man/3/asinh> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 asinhf
 
 C<static method asinhf : float ($x : float);>
 
-Calls the L<asinhf|https://linux.die.net/man/3/asinhf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<asinhf|https://linux.die.net/man/3/asinhf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 atan
 
 C<static method atan : double ($x : double);>
 
-Calls the L<atan|https://linux.die.net/man/3/atan> function defined in C<math.h> in the C language and returns its return value.
+Calls L<atan|https://linux.die.net/man/3/atan> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 atan2
 
 C<static method atan2 : double ($y : double, $x : double);>
 
-Calls the L<atan2|https://linux.die.net/man/3/atan2> function defined in C<math.h> in the C language and returns its return value.
+Calls L<atan2|https://linux.die.net/man/3/atan2> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 atanf
 
 C<static method atanf : float ($x : float);>
 
-Calls the L<atanf|https://linux.die.net/man/3/atanf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<atanf|https://linux.die.net/man/3/atanf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 atanh
 
 C<static method atanh : double ($x : double);>
 
-Calls the L<atanh|https://linux.die.net/man/3/atanh> function defined in C<math.h> in the C language and returns its return value.
+Calls L<atanh|https://linux.die.net/man/3/atanh> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 atanhf
 
 C<static method atanhf : float ($x : float);>
 
-Calls the L<atanhf|https://linux.die.net/man/3/atanhf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<atanhf|https://linux.die.net/man/3/atanhf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 cabs
 
 C<static method cabs : double ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<cabs|https://linux.die.net/man/3/cabs> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cabs|https://linux.die.net/man/3/cabs> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cabsf
 
 C<static method cabsf : float ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<cabsf|https://linux.die.net/man/3/cabsf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cabsf|https://linux.die.net/man/3/cabsf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cacos
 
 C<static method cacos : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<cacos|https://linux.die.net/man/3/cacos> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cacos|https://linux.die.net/man/3/cacos> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cacosf
 
 C<static method cacosf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<cacosf|https://linux.die.net/man/3/cacosf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cacosf|https://linux.die.net/man/3/cacosf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cacosh
 
 C<static method cacosh : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<cacosh|https://linux.die.net/man/3/cacosh> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cacosh|https://linux.die.net/man/3/cacosh> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cacoshf
 
 C<static method cacoshf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<cacoshf|https://linux.die.net/man/3/cacoshf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cacoshf|https://linux.die.net/man/3/cacoshf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cadd
 
@@ -170,97 +170,97 @@ Performs the addition operation on $z1 and $z2, and returns the resulting value.
 
 C<static method carg : double ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<carg|https://linux.die.net/man/3/carg> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<carg|https://linux.die.net/man/3/carg> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cargf
 
 C<static method cargf : float ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<cargf|https://linux.die.net/man/3/cargf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cargf|https://linux.die.net/man/3/cargf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 casin
 
 C<static method casin : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<casin|https://linux.die.net/man/3/casin> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<casin|https://linux.die.net/man/3/casin> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 casinf
 
 C<static method casinf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<casinf|https://linux.die.net/man/3/casinf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<casinf|https://linux.die.net/man/3/casinf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 casinh
 
 C<static method casinh : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<casinh|https://linux.die.net/man/3/casinh> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<casinh|https://linux.die.net/man/3/casinh> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 casinhf
 
 C<static method casinhf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<casinhf|https://linux.die.net/man/3/casinhf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<casinhf|https://linux.die.net/man/3/casinhf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 catan
 
 C<static method catan : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<catan|https://linux.die.net/man/3/catan> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<catan|https://linux.die.net/man/3/catan> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 catanf
 
 C<static method catanf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<catanf|https://linux.die.net/man/3/catanf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<catanf|https://linux.die.net/man/3/catanf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 catanh
 
 C<static method catanh : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<catanh|https://linux.die.net/man/3/catanh> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<catanh|https://linux.die.net/man/3/catanh> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 catanhf
 
 C<static method catanhf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<catanhf|https://linux.die.net/man/3/catanhf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<catanhf|https://linux.die.net/man/3/catanhf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cbrt
 
 C<static method cbrt : double ($x : double);>
 
-Calls the L<cbrt|https://linux.die.net/man/3/cbrt> function defined in C<math.h> in the C language and returns its return value.
+Calls L<cbrt|https://linux.die.net/man/3/cbrt> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 cbrtf
 
 C<static method cbrtf : float ($x : float);>
 
-Calls the L<cbrtf|https://linux.die.net/man/3/cbrtf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<cbrtf|https://linux.die.net/man/3/cbrtf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 ccos
 
 C<static method ccos : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<ccos|https://linux.die.net/man/3/ccos> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<ccos|https://linux.die.net/man/3/ccos> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 ccosf
 
 C<static method ccosf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<ccosf|https://linux.die.net/man/3/ccosf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<ccosf|https://linux.die.net/man/3/ccosf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 ccosh
 
 C<static method ccosh : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<ccosh|https://linux.die.net/man/3/ccosh> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<ccosh|https://linux.die.net/man/3/ccosh> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 ccoshf
 
 C<static method ccoshf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<ccoshf|https://linux.die.net/man/3/ccoshf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<ccoshf|https://linux.die.net/man/3/ccoshf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cdiv
 
@@ -278,37 +278,37 @@ Performs the divison operation on $z1 and $z2, and returns the resulting value.
 
 C<static method ceil : double ($x : double);>
 
-Calls the L<ceil|https://linux.die.net/man/3/ceil> function defined in C<math.h> in the C language and returns its return value.
+Calls L<ceil|https://linux.die.net/man/3/ceil> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 ceilf
 
 C<static method ceilf : float ($x : float);>
 
-Calls the L<ceilf|https://linux.die.net/man/3/ceilf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<ceilf|https://linux.die.net/man/3/ceilf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 cexp
 
 C<static method cexp : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<cexp|https://linux.die.net/man/3/cexp> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cexp|https://linux.die.net/man/3/cexp> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cexpf
 
 C<static method cexpf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<cexpf|https://linux.die.net/man/3/cexpf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cexpf|https://linux.die.net/man/3/cexpf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 clog
 
 C<static method clog : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<clog|https://linux.die.net/man/3/clog> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<clog|https://linux.die.net/man/3/clog> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 clogf
 
 C<static method clogf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<clogf|https://linux.die.net/man/3/clogf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<clogf|https://linux.die.net/man/3/clogf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cmul
 
@@ -338,61 +338,61 @@ Creates a float complex value given the real number $re and the imaginary number
 
 C<static method conj : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<conj|https://linux.die.net/man/3/conj> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<conj|https://linux.die.net/man/3/conj> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 conjf
 
 C<static method conjf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<conjf|https://linux.die.net/man/3/conjf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<conjf|https://linux.die.net/man/3/conjf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 copysign
 
 C<static method copysign : double ($x : double, $y : double);>
 
-Calls the L<copysign|https://linux.die.net/man/3/copysign> function defined in C<math.h> in the C language and returns its return value.
+Calls L<copysign|https://linux.die.net/man/3/copysign> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 copysignf
 
 C<static method copysignf : float ($x : float, $y : float);>
 
-Calls the L<copysignf|https://linux.die.net/man/3/copysignf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<copysignf|https://linux.die.net/man/3/copysignf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 cos
 
 C<static method cos : double ($x : double);>
 
-Calls the L<cos|https://linux.die.net/man/3/cos> function defined in C<math.h> in the C language and returns its return value.
+Calls L<cos|https://linux.die.net/man/3/cos> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 cosf
 
 C<static method cosf : float ($x : float);>
 
-Calls the L<cosf|https://linux.die.net/man/3/cosf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<cosf|https://linux.die.net/man/3/cosf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 cosh
 
 C<static method cosh : double ($x : double);>
 
-Calls the L<cosh|https://linux.die.net/man/3/cosh> function defined in C<math.h> in the C language and returns its return value.
+Calls L<cosh|https://linux.die.net/man/3/cosh> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 coshf
 
 C<static method coshf : float ($x : float);>
 
-Calls the L<coshf|https://linux.die.net/man/3/coshf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<coshf|https://linux.die.net/man/3/coshf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 cpow
 
 C<static method cpow : L<Complex_2d|SPVM::Complex_2d> ($z1 : L<Complex_2d|SPVM::Complex_2d>, $z2 : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<cpow|https://linux.die.net/man/3/cpow> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cpow|https://linux.die.net/man/3/cpow> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cpowf
 
 C<static method cpowf : L<Complex_2f|SPVM::Complex_2f> ($z1 : L<Complex_2f|SPVM::Complex_2f>, $z2 : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<cpowf|https://linux.die.net/man/3/cpowf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<cpowf|https://linux.die.net/man/3/cpowf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 cscamul
 
@@ -410,37 +410,37 @@ Perlforms the multiplication operation on the real number $c and the complex num
 
 C<static method csin : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<csin|https://linux.die.net/man/3/csin> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<csin|https://linux.die.net/man/3/csin> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 csinf
 
 C<static method csinf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<csinf|https://linux.die.net/man/3/csinf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<csinf|https://linux.die.net/man/3/csinf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 csinh
 
 C<static method csinh : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<csinh|https://linux.die.net/man/3/csinh> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<csinh|https://linux.die.net/man/3/csinh> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 csinhf
 
 C<static method csinhf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<csinhf|https://linux.die.net/man/3/csinhf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<csinhf|https://linux.die.net/man/3/csinhf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 csqrt
 
 C<static method csqrt : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<csqrt|https://linux.die.net/man/3/csqrt> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<csqrt|https://linux.die.net/man/3/csqrt> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 csqrtf
 
 C<static method csqrtf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<csqrtf|https://linux.die.net/man/3/csqrtf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<csqrtf|https://linux.die.net/man/3/csqrtf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 csub
 
@@ -470,25 +470,25 @@ Negates the sign of $z and returns it.
 
 C<static method ctan : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<ctan|https://linux.die.net/man/3/ctan> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<ctan|https://linux.die.net/man/3/ctan> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 ctanf
 
 C<static method ctanf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<ctanf|https://linux.die.net/man/3/ctanf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<ctanf|https://linux.die.net/man/3/ctanf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 ctanh
 
 C<static method ctanh : L<Complex_2d|SPVM::Complex_2d> ($z : L<Complex_2d|SPVM::Complex_2d>);>
 
-Calls the L<ctanh|https://linux.die.net/man/3/ctanh> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<ctanh|https://linux.die.net/man/3/ctanh> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 ctanhf
 
 C<static method ctanhf : L<Complex_2f|SPVM::Complex_2f> ($z : L<Complex_2f|SPVM::Complex_2f>);>
 
-Calls the L<ctanhf|https://linux.die.net/man/3/ctanhf> function defined in C<complex.h> in the C language and returns its return value.
+Calls L<ctanhf|https://linux.die.net/man/3/ctanhf> function defined in C<complex.h> in the C language and returns its return value.
 
 =head2 E
 
@@ -500,385 +500,385 @@ Returns the Euler's number C<e>. This value is C<0x1.5bf0a8b145769p+1>.
 
 C<static method erf : double ($x : double);>
 
-Calls the L<erf|https://linux.die.net/man/3/erf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<erf|https://linux.die.net/man/3/erf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 erfc
 
 C<static method erfc : double ($x : double);>
 
-Calls the L<erfc|https://linux.die.net/man/3/erfc> function defined in C<math.h> in the C language and returns its return value.
+Calls L<erfc|https://linux.die.net/man/3/erfc> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 erfcf
 
 C<static method erfcf : float ($x : float);>
 
-Calls the L<erfcf|https://linux.die.net/man/3/erfcf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<erfcf|https://linux.die.net/man/3/erfcf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 erff
 
 C<static method erff : float ($x : float);>
 
-Calls the L<erff|https://linux.die.net/man/3/erff> function defined in C<math.h> in the C language and returns its return value.
+Calls L<erff|https://linux.die.net/man/3/erff> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 exp
 
 C<static method exp : double ($x : double);>
 
-Calls the L<exp|https://linux.die.net/man/3/exp> function defined in C<math.h> in the C language and returns its return value.
+Calls L<exp|https://linux.die.net/man/3/exp> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 exp2
 
 C<static method exp2 : double ($x : double);>
 
-Calls the L<exp2|https://linux.die.net/man/3/exp2> function defined in C<math.h> in the C language and returns its return value.
+Calls L<exp2|https://linux.die.net/man/3/exp2> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 exp2f
 
 C<static method exp2f : float ($x : float);>
 
-Calls the L<exp2f|https://linux.die.net/man/3/exp2f> function defined in C<math.h> in the C language and returns its return value.
+Calls L<exp2f|https://linux.die.net/man/3/exp2f> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 expf
 
 C<static method expf : float ($x : float);>
 
-Calls the L<expf|https://linux.die.net/man/3/expf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<expf|https://linux.die.net/man/3/expf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 expm1
 
 C<static method expm1 : double ($x : double);>
 
-Calls the L<expm1|https://linux.die.net/man/3/expm1> function defined in C<math.h> in the C language and returns its return value.
+Calls L<expm1|https://linux.die.net/man/3/expm1> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 expm1f
 
 C<static method expm1f : float ($x : float);>
 
-Calls the L<expm1f|https://linux.die.net/man/3/expm1f> function defined in C<math.h> in the C language and returns its return value.
+Calls L<expm1f|https://linux.die.net/man/3/expm1f> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fabs
 
 C<static method fabs : double ($x : double);>
 
-Calls the L<fabs|https://linux.die.net/man/3/fabs> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fabs|https://linux.die.net/man/3/fabs> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fabsf
 
 C<static method fabsf : float ($x : float);>
 
-Calls the L<fabsf|https://linux.die.net/man/3/fabsf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fabsf|https://linux.die.net/man/3/fabsf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fdim
 
 C<static method fdim : double ($x : double, $y : double);>
 
-Calls the L<fdim|https://linux.die.net/man/3/fdim> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fdim|https://linux.die.net/man/3/fdim> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fdimf
 
 C<static method fdimf : float ($x : float, $y : float);>
 
-Calls the L<fdimf|https://linux.die.net/man/3/fdimf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fdimf|https://linux.die.net/man/3/fdimf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 FE_DOWNWARD
 
 C<static method FE_DOWNWARD : int ();>
 
-Calls the C<FE_DOWNWARD> macro of the C language defined in C<fenv.h>.
+Calls C<FE_DOWNWARD> macro defined in C<fenv.h> in the C language.
 
 =head2 FE_TONEAREST
 
 C<static method FE_TONEAREST : int ();>
 
-Calls the C<FE_TONEAREST> macro of the C language defined in C<fenv.h>.
+Calls C<FE_TONEAREST> macro defined in C<fenv.h> in the C language.
 
 =head2 FE_TOWARDZERO
 
 C<static method FE_TOWARDZERO : int ();>
 
-Calls the C<FE_TOWARDZERO> macro of the C language defined in C<fenv.h>.
+Calls C<FE_TOWARDZERO> macro defined in C<fenv.h> in the C language.
 
 =head2 FE_UPWARD
 
 C<static method FE_UPWARD : int ();>
 
-Calls the C<FE_UPWARD> macro of the C language defined in C<fenv.h>.
+Calls C<FE_UPWARD> macro defined in C<fenv.h> in the C language.
 
 =head2 fesetround
 
 C<static method fesetround : int ($round : int);>
 
-Calls the L<fesetround|https://linux.die.net/man/3/fesetround> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fesetround|https://linux.die.net/man/3/fesetround> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 floor
 
 C<static method floor : double ($x : double);>
 
-Calls the L<floor|https://linux.die.net/man/3/floor> function defined in C<math.h> in the C language and returns its return value.
+Calls L<floor|https://linux.die.net/man/3/floor> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 floorf
 
 C<static method floorf : float ($x : float);>
 
-Calls the L<floorf|https://linux.die.net/man/3/floorf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<floorf|https://linux.die.net/man/3/floorf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fma
 
 C<static method fma : double ($x : double, $y : double, $x3 : double);>
 
-Calls the L<fma|https://linux.die.net/man/3/fma> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fma|https://linux.die.net/man/3/fma> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fmaf
 
 C<static method fmaf : float ($x : float, $y : float, $x3 : float);>
 
-Calls the L<fmaf|https://linux.die.net/man/3/fmaf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fmaf|https://linux.die.net/man/3/fmaf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fmax
 
 C<static method fmax : double ($x : double, $y : double);>
 
-Calls the L<fmax|https://linux.die.net/man/3/fmax> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fmax|https://linux.die.net/man/3/fmax> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fmaxf
 
 C<static method fmaxf : float ($x : float, $y : float);>
 
-Calls the L<fmaxf|https://linux.die.net/man/3/fmaxf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fmaxf|https://linux.die.net/man/3/fmaxf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fmin
 
 C<static method fmin : double ($x : double, $y : double);>
 
-Calls the L<fmin|https://linux.die.net/man/3/fmin> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fmin|https://linux.die.net/man/3/fmin> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fminf
 
 C<static method fminf : float ($x : float, $y : float);>
 
-Calls the L<fminf|https://linux.die.net/man/3/fminf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fminf|https://linux.die.net/man/3/fminf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fmod
 
 C<static method fmod : double ($x : double, $y : double);>
 
-Calls the L<fmod|https://linux.die.net/man/3/fmod> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fmod|https://linux.die.net/man/3/fmod> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 fmodf
 
 C<static method fmodf : float ($x : float, $y : float);>
 
-Calls the L<fmodf|https://linux.die.net/man/3/fmodf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<fmodf|https://linux.die.net/man/3/fmodf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 FP_ILOGB0
 
 C<static method FP_ILOGB0 : int ();>
 
-Calls the C<FP_ILOGB0> macro of the C language defined in C<fenv.h>.
+Calls C<FP_ILOGB0> macro defined in C<fenv.h> in the C language.
 
 =head2 FP_ILOGBNAN
 
 C<static method FP_ILOGBNAN : int ();>
 
-Calls the C<FP_ILOGBNAN> macro of the C language defined in C<fenv.h>.
+Calls C<FP_ILOGBNAN> macro defined in C<fenv.h> in the C language.
 
 =head2 FP_INFINITE
 
 C<static method FP_INFINITE : int ();>
 
-Calls the C<FP_INFINITE> macro of the C language defined in C<fenv.h>.
+Calls C<FP_INFINITE> macro defined in C<fenv.h> in the C language.
 
 =head2 FP_NAN
 
 C<static method FP_NAN : int ();>
 
-Calls the C<FP_NAN> macro of the C language defined in C<fenv.h>.
+Calls C<FP_NAN> macro defined in C<fenv.h> in the C language.
 
 =head2 FP_ZERO
 
 C<static method FP_ZERO : int ();>
 
-Calls the C<FP_ZERO> macro of the C language defined in C<fenv.h>.
+Calls C<FP_ZERO> macro defined in C<fenv.h> in the C language.
 
 =head2 fpclassify
 
 C<static method fpclassify : int ($x : double);>
 
-Calls the C<fpclassify> macro of the C language defined in C<math.h> with the double argument $x.
+Calls L<fpclassify|https://linux.die.net/man/3/fpclassify> macro defined in C<math.h>> in the C language with the double argument $x.
 
 =head2 fpclassifyf
 
 C<static method fpclassifyf : int ($x : float);>
 
-Calls the C<fpclassify> macro of the C language defined in C<math.h> with the float argument $x.
+Calls L<fpclassify|https://linux.die.net/man/3/fpclassify> macro defined in C<math.h>> in the C language with the float argument $x.
 
 =head2 frexp
 
 C<static method frexp : double ($x : double, $exp : int*);>
 
-Calls the L<frexp|https://linux.die.net/man/3/frexp> function defined in C<math.h> in the C language and returns its return value.
+Calls L<frexp|https://linux.die.net/man/3/frexp> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 frexpf
 
 C<static method frexpf : float ($x : float, $exp : int*);>
 
-Calls the L<frexpf|https://linux.die.net/man/3/frexpf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<frexpf|https://linux.die.net/man/3/frexpf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 HUGE_VAL
 
 C<static method HUGE_VAL : double ();>
 
-Calls the C<HUGE_VAL> macro defined in C<math.h> in the C language and returns its return value.
+Calls C<HUGE_VAL> macro defined in C<math.h> in the C language and returns its return value.
 
 =head2 HUGE_VALF
 
 C<static method HUGE_VALF : float ();>
 
-Calls the C<HUGE_VALF> macro defined in C<math.h> in the C language and returns its return value.
+Calls C<HUGE_VALF> macro defined in C<math.h> in the C language and returns its return value.
 
 =head2 hypot
 
 C<static method hypot : double ($x : double, $y : double);>
 
-Calls the L<hypot|https://linux.die.net/man/3/hypot> function defined in C<math.h> in the C language and returns its return value.
+Calls L<hypot|https://linux.die.net/man/3/hypot> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 hypotf
 
 C<static method hypotf : float ($x : float, $y : float);>
 
-Calls the L<hypotf|https://linux.die.net/man/3/hypotf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<hypotf|https://linux.die.net/man/3/hypotf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 ilogb
 
 C<static method ilogb : int ($x : double);>
 
-Calls the L<ilogb|https://linux.die.net/man/3/ilogb> function defined in C<math.h> in the C language and returns its return value.
+Calls L<ilogb|https://linux.die.net/man/3/ilogb> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 ilogbf
 
 C<static method ilogbf : int ($x : float);>
 
-Calls the L<ilogbf|https://linux.die.net/man/3/ilogbf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<ilogbf|https://linux.die.net/man/3/ilogbf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 INFINITY
 
 C<static method INFINITY : double ();>
 
-Calls the C<INFINITY> macro of the C language defined in C<math.h>, and returns the return value as a dobule value.
+Calls L<INFINITY|https://linux.die.net/man/3/INFINITY> macro defined in C<math.h>> in the C language, and returns the return value as a dobule value.
 
 =head2 INFINITYF
 
 C<static method INFINITYF : float ();>
 
-Calls the C<INFINITY> macro of the C language defined in C<math.h>, and the return value as a float value.
+Calls L<INFINITY|https://linux.die.net/man/3/INFINITY> macro defined in C<math.h>> in the C language, and the return value as a float value.
 
 =head2 isfinite
 
 C<static method isfinite : int ($x : double);>
 
-Calls the C<isfinite> macro of the C language defined in C<math.h> with the double argument $x.
+Calls L<isfinite|https://linux.die.net/man/3/isfinite> macro defined in C<math.h>> in the C language with the double argument $x.
 
 =head2 isfinitef
 
 C<static method isfinitef : int ($x : float);>
 
-Calls the C<isfinite> macro of the C language defined in C<math.h> with the float argument $x.
+Calls L<isfinite|https://linux.die.net/man/3/isfinite> macro defined in C<math.h>> in the C language with the float argument $x.
 
 =head2 isgreater
 
 C<static method isgreater : int ($x : double, $y : double);>
 
-Calls the C<isgreater> macro of the C language defined in C<math.h> with the double arguments $x and $y.
+Calls L<isgreater|https://linux.die.net/man/3/isgreater> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
 
 =head2 isgreaterequal
 
 C<static method isgreaterequal : int ($x : double, $y : double);>
 
-Calls the C<isgreaterequal> macro of the C language defined in C<math.h> with the double arguments $x and $y.
+Calls L<isgreaterequal|https://linux.die.net/man/3/isgreaterequal> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
 
 =head2 isgreaterequalf
 
 C<static method isgreaterequalf : int ($x : float, $y : float);>
 
-Calls the C<isgreaterequal> macro of the C language defined in C<math.h> with the float arguments $x and $y.
+Calls L<isgreaterequal|https://linux.die.net/man/3/isgreaterequal> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
 
 =head2 isgreaterf
 
 C<static method isgreaterf : int ($x : float, $y : float);>
 
-Calls the C<isgreater> macro of the C language defined in C<math.h> with the float arguments $x and $y.
+Calls L<isgreater|https://linux.die.net/man/3/isgreater> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
 
 =head2 isinf
 
 C<static method isinf : int ($x : double);>
 
-Calls the C<isinf> macro of the C language defined in C<math.h> with the double argument $x.
+Calls L<isinf|https://linux.die.net/man/3/isinf> macro defined in C<math.h>> in the C language with the double argument $x.
 
 =head2 isinff
 
 C<static method isinff : int($x : float);>
 
-Calls the C<isinf> macro of the C language defined in C<math.h> with the float argument $x.
+Calls L<isinf|https://linux.die.net/man/3/isinf> macro defined in C<math.h>> in the C language with the float argument $x.
 
 =head2 isless
 
 C<static method isless : int ($x : double, $y : double);>
 
-Calls the C<isless> macro of the C language defined in C<math.h> with the double arguments $x and $y.
+Calls L<isless|https://linux.die.net/man/3/isless> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
 
 =head2 islessequal
 
 C<static method islessequal : int ($x : double, $y : double);>
 
-Calls the C<islessequal> macro of the C language defined in C<math.h> with the double arguments $x and $y.
+Calls L<islessequal|https://linux.die.net/man/3/islessequal> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
 
 =head2 islessequalf
 
 C<static method islessequalf : int ($x : float, $y : float);>
 
-Calls the C<islessequalf> macro of the C language defined in C<math.h> with the float arguments $x and $y.
+Calls L<islessequalf|https://linux.die.net/man/3/islessequalf> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
 
 =head2 islessf
 
 C<static method islessf : int ($x : float, $y : float);>
 
-Calls the C<islessf> macro of the C language defined in C<math.h> with the float arguments $x and $y.
+Calls L<islessf|https://linux.die.net/man/3/islessf> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
 
 =head2 islessgreater
 
 C<static method islessgreater : int ($x : double, $y : double);>
 
-Calls the C<islessgreater> macro of the C language defined in C<math.h> with the double arguments $x and $y.
+Calls L<islessgreater|https://linux.die.net/man/3/islessgreater> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
 
 =head2 islessgreaterf
 
 C<static method islessgreaterf : int ($x : float, $y : float);>
 
-Calls the C<islessgreater> macro of the C language defined in C<math.h> with the float arguments $x and $y.
+Calls L<islessgreater|https://linux.die.net/man/3/islessgreater> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
 
 =head2 isnan
 
 C<static method isnan : int ($x : double);>
 
-Calls the C<isnan> macro of the C language defined in C<math.h> with the double argument $x.
+Calls L<isnan|https://linux.die.net/man/3/isnan> macro defined in C<math.h>> in the C language with the double argument $x.
 
 =head2 isnanf
 
 C<static method isnanf : int ($x : float);>
 
-Calls the C<isnanf> macro of the C language defined in C<math.h> with the float argument $x.
+Calls L<isnanf|https://linux.die.net/man/3/isnanf> macro defined in C<math.h>> in the C language with the float argument $x.
 
 =head2 isunordered
 
 C<static method isunordered : int ($x : double, $y : double);>
 
-Calls the C<isunordered> macro of the C language defined in C<math.h> with the double arguments $x and $y.
+Calls L<isunordered|https://linux.die.net/man/3/isunordered> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
 
 =head2 isunorderedf
 
 C<static method isunorderedf : int ($x : float, $y : float);>
 
-Calls the C<isunorderedf> macro of the C language defined in C<math.h> with the float arguments $x and $y.
+Calls L<isunorderedf|https://linux.die.net/man/3/isunorderedf> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
 
 =head2 labs
 
@@ -890,121 +890,121 @@ Returns the abusolute value of the long value $x.
 
 C<static method ldexp : double ($x : double, $exp : int);>
 
-Calls the L<ldexp|https://linux.die.net/man/3/ldexp> function defined in C<math.h> in the C language and returns its return value.
+Calls L<ldexp|https://linux.die.net/man/3/ldexp> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 ldexpf
 
 C<static method ldexpf : float ($x : float, $exp : int);>
 
-Calls the L<ldexpf|https://linux.die.net/man/3/ldexpf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<ldexpf|https://linux.die.net/man/3/ldexpf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 lgamma
 
 C<static method lgamma : double ($x : double);>
 
-Calls the L<lgamma|https://linux.die.net/man/3/lgamma> function defined in C<math.h> in the C language and returns its return value.
+Calls L<lgamma|https://linux.die.net/man/3/lgamma> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 lgammaf
 
 C<static method lgammaf : float ($x : float);>
 
-Calls the L<lgammaf|https://linux.die.net/man/3/lgammaf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<lgammaf|https://linux.die.net/man/3/lgammaf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 log
 
 C<static method log : double ($x : double);>
 
-Calls the L<log|https://linux.die.net/man/3/log> function defined in C<math.h> in the C language and returns its return value.
+Calls L<log|https://linux.die.net/man/3/log> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 log10
 
 C<static method log10 : double ($x : double);>
 
-Calls the L<log10|https://linux.die.net/man/3/log10> function defined in C<math.h> in the C language and returns its return value.
+Calls L<log10|https://linux.die.net/man/3/log10> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 log10f
 
 C<static method log10f : float ($x : float);>
 
-Calls the L<log10f|https://linux.die.net/man/3/log10f> function defined in C<math.h> in the C language and returns its return value.
+Calls L<log10f|https://linux.die.net/man/3/log10f> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 log1p
 
 C<static method log1p : double ($x : double);>
 
-Calls the L<log1p|https://linux.die.net/man/3/log1p> function defined in C<math.h> in the C language and returns its return value.
+Calls L<log1p|https://linux.die.net/man/3/log1p> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 log1pf
 
 C<static method log1pf : float ($x : float);>
 
-Calls the L<log1pf|https://linux.die.net/man/3/log1pf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<log1pf|https://linux.die.net/man/3/log1pf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 log2
 
 C<static method log2 : double ($x : double);>
 
-Calls the L<log2|https://linux.die.net/man/3/log2> function defined in C<math.h> in the C language and returns its return value.
+Calls L<log2|https://linux.die.net/man/3/log2> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 log2f
 
 C<static method log2f : float ($x : float);>
 
-Calls the L<log2f|https://linux.die.net/man/3/log2f> function defined in C<math.h> in the C language and returns its return value.
+Calls L<log2f|https://linux.die.net/man/3/log2f> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 logb
 
 C<static method logb : double ($x : double);>
 
-Calls the L<logb|https://linux.die.net/man/3/logb> function defined in C<math.h> in the C language and returns its return value.
+Calls L<logb|https://linux.die.net/man/3/logb> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 logbf
 
 C<static method logbf : float ($x : float);>
 
-Calls the L<logbf|https://linux.die.net/man/3/logbf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<logbf|https://linux.die.net/man/3/logbf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 logf
 
 C<static method logf : float ($x : float);>
 
-Calls the L<logf|https://linux.die.net/man/3/logf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<logf|https://linux.die.net/man/3/logf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 lround
 
 C<static method lround : long ($x : double);>
 
-Calls the L<llround|https://linux.die.net/man/3/llround> function defined in C<math.h> in the C language and returns its return value.
+Calls L<llround|https://linux.die.net/man/3/llround> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 lroundf
 
 C<static method lroundf : long ($x : float);>
 
-Calls the L<llroundf|https://linux.die.net/man/3/llroundf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<llroundf|https://linux.die.net/man/3/llroundf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 modf
 
 C<static method modf : double ($x : double, $intpart : double*);>
 
-Calls the L<modf|https://linux.die.net/man/3/modf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<modf|https://linux.die.net/man/3/modf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 modff
 
 C<static method modff : float ($x : float, $intpart : float*);>
 
-Calls the L<modff|https://linux.die.net/man/3/modff> function defined in C<math.h> in the C language and returns its return value.
+Calls L<modff|https://linux.die.net/man/3/modff> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 NAN
 
 C<static method NAN : double ();>
 
-Calls the C<NAN> macro of the C language defined in C<math.h>, and return the return value as a double type.
+Calls L<NAN|https://linux.die.net/man/3/NAN> macro defined in C<math.h>> in the C language, and return the return value as a double type.
 
 =head2 nan
 
 C<static method nan : double ($string : string);>
 
-Calls the L<nan|https://linux.die.net/man/3/nan> function defined in C<math.h> in the C language and returns its return value.
+Calls L<nan|https://linux.die.net/man/3/nan> function defined in C<math.h> in the C language and returns its return value.
 
 Exceptions:
 
@@ -1014,13 +1014,13 @@ The $string must be defined. Otherwise an exception is thrown.
 
 C<static method NANF : float ();>
 
-Calls the C<NAN> macro of the C language defined in C<math.h>, and return the return value as a float type.
+Calls L<NAN|https://linux.die.net/man/3/NAN> macro defined in C<math.h>> in the C language, and return the return value as a float type.
 
 =head2 nanf
 
 C<static method nanf : float ($string : string);>
 
-Calls the L<nanf|https://linux.die.net/man/3/nanf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<nanf|https://linux.die.net/man/3/nanf> function defined in C<math.h> in the C language and returns its return value.
 
 Exceptions:
 
@@ -1030,37 +1030,37 @@ The $string must be defined. Otherwise an exception is thrown.
 
 C<static method nearbyint : double ($x : double);>
 
-Calls the L<nearbyint|https://linux.die.net/man/3/nearbyint> function defined in C<math.h> in the C language and returns its return value.
+Calls L<nearbyint|https://linux.die.net/man/3/nearbyint> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 nearbyintf
 
 C<static method nearbyintf : float ($x : float);>
 
-Calls the L<nearbyintf|https://linux.die.net/man/3/nearbyintf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<nearbyintf|https://linux.die.net/man/3/nearbyintf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 nextafter
 
 C<static method nextafter : double ($x : double, $y : double);>
 
-Calls the L<nextafter|https://linux.die.net/man/3/nextafter> function defined in C<math.h> in the C language and returns its return value.
+Calls L<nextafter|https://linux.die.net/man/3/nextafter> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 nextafterf
 
 C<static method nextafterf : float ($x : float, $y : float);>
 
-Calls the L<nextafterf|https://linux.die.net/man/3/nextafterf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<nextafterf|https://linux.die.net/man/3/nextafterf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 nexttoward
 
 C<static method nexttoward : double ($x : double, $y : double);>
 
-Calls the L<nexttoward|https://linux.die.net/man/3/nexttoward> function defined in C<math.h> in the C language and returns its return value.
+Calls L<nexttoward|https://linux.die.net/man/3/nexttoward> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 nexttowardf
 
 C<static method nexttowardf : float ($x : float, $y : double);>
 
-Calls the L<nexttowardf|https://linux.die.net/man/3/nexttowardf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<nexttowardf|https://linux.die.net/man/3/nexttowardf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 PI
 
@@ -1072,169 +1072,169 @@ Returns pi. This value is C<0x1.921fb54442d18p+1>.
 
 C<static method pow : double ($x : double, $y : double);>
 
-Calls the L<pow|https://linux.die.net/man/3/pow> function defined in C<math.h> in the C language and returns its return value.
+Calls L<pow|https://linux.die.net/man/3/pow> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 powf
 
 C<static method powf : float ($x : float, $y : float);>
 
-Calls the L<powf|https://linux.die.net/man/3/powf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<powf|https://linux.die.net/man/3/powf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 remainder
 
 C<static method remainder : double ($x : double, $y : double);>
 
-Calls the L<remainder|https://linux.die.net/man/3/remainder> function defined in C<math.h> in the C language and returns its return value.
+Calls L<remainder|https://linux.die.net/man/3/remainder> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 remainderf
 
 C<static method remainderf : float ($x : float, $y : float);>
 
-Calls the L<remainderf|https://linux.die.net/man/3/remainderf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<remainderf|https://linux.die.net/man/3/remainderf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 remquo
 
 C<static method remquo : double ($x : double, $y : double, $quo : int*);>
 
-Calls the L<remquo|https://linux.die.net/man/3/remquo> function defined in C<math.h> in the C language and returns its return value.
+Calls L<remquo|https://linux.die.net/man/3/remquo> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 remquof
 
 C<static method remquof : float ($x : float, $y : float, $quo : int*);>
 
-Calls the L<remquof|https://linux.die.net/man/3/remquof> function defined in C<math.h> in the C language and returns its return value.
+Calls L<remquof|https://linux.die.net/man/3/remquof> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 round
 
 C<static method round : double ($x : double);>
 
-Calls the L<round|https://linux.die.net/man/3/round> function defined in C<math.h> in the C language and returns its return value.
+Calls L<round|https://linux.die.net/man/3/round> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 roundf
 
 C<static method roundf : float ($x : float);>
 
-Calls the L<roundf|https://linux.die.net/man/3/roundf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<roundf|https://linux.die.net/man/3/roundf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 scalbln
 
 C<static method scalbln : double ($x : double, $exp : long);>
 
-Calls the L<scalbln|https://linux.die.net/man/3/scalbln> function defined in C<math.h> in the C language and returns its return value.
+Calls L<scalbln|https://linux.die.net/man/3/scalbln> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 scalblnf
 
 C<static method scalblnf : float ($x : float, $exp : long);>
 
-Calls the L<scalblnf|https://linux.die.net/man/3/scalblnf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<scalblnf|https://linux.die.net/man/3/scalblnf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 scalbn
 
 C<static method scalbn : double ($x : double, $exp : int);>
 
-Calls the L<scalbn|https://linux.die.net/man/3/scalbn> function defined in C<math.h> in the C language and returns its return value.
+Calls L<scalbn|https://linux.die.net/man/3/scalbn> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 scalbnf
 
 C<static method scalbnf : float ($x : float, $exp : int);>
 
-Calls the L<scalbnf|https://linux.die.net/man/3/scalbnf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<scalbnf|https://linux.die.net/man/3/scalbnf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 signbit
 
 C<static method signbit : int ($x : double);>
 
-Calls the L<signbit|https://linux.die.net/man/3/signbit> function defined in C<math.h> in the C language and returns its return value.
+Calls L<signbit|https://linux.die.net/man/3/signbit> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 signbitf
 
 C<static method signbitf : int ($x : float);>
 
-Calls the L<signbitf|https://linux.die.net/man/3/signbitf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<signbitf|https://linux.die.net/man/3/signbitf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 sin
 
 C<static method sin : double ($x : double);>
 
-Calls the L<sin|https://linux.die.net/man/3/sin> function defined in C<math.h> in the C language and returns its return value.
+Calls L<sin|https://linux.die.net/man/3/sin> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 sinf
 
 C<static method sinf : float ($x : float);>
 
-Calls the L<sinf|https://linux.die.net/man/3/sinf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<sinf|https://linux.die.net/man/3/sinf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 sinh
 
 C<static method sinh : double ($x : double);>
 
-Calls the L<sinh|https://linux.die.net/man/3/sinh> function defined in C<math.h> in the C language and returns its return value.
+Calls L<sinh|https://linux.die.net/man/3/sinh> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 sinhf
 
 C<static method sinhf : float ($x : float);>
 
-Calls the L<sinhf|https://linux.die.net/man/3/sinhf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<sinhf|https://linux.die.net/man/3/sinhf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 sqrt
 
 C<static method sqrt : double ($x : double);>
 
-Calls the L<sqrt|https://linux.die.net/man/3/sqrt> function defined in C<math.h> in the C language and returns its return value.
+Calls L<sqrt|https://linux.die.net/man/3/sqrt> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 sqrtf
 
 C<static method sqrtf : float ($x : float);>
 
-Calls the L<sqrtf|https://linux.die.net/man/3/sqrtf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<sqrtf|https://linux.die.net/man/3/sqrtf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 tan
 
 C<static method tan : double ($x : double);>
 
-Calls the L<tan|https://linux.die.net/man/3/tan> function defined in C<math.h> in the C language and returns its return value.
+Calls L<tan|https://linux.die.net/man/3/tan> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 tanf
 
 C<static method tanf : float ($x : float);>
 
-Calls the L<tanf|https://linux.die.net/man/3/tanf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<tanf|https://linux.die.net/man/3/tanf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 tanh
 
 C<static method tanh : double ($x : double);>
 
-Calls the L<tanh|https://linux.die.net/man/3/tanh> function defined in C<math.h> in the C language and returns its return value.
+Calls L<tanh|https://linux.die.net/man/3/tanh> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 tanhf
 
 C<static method tanhf : float ($x : float);>
 
-Calls the L<tanhf|https://linux.die.net/man/3/tanhf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<tanhf|https://linux.die.net/man/3/tanhf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 tgamma
 
 C<static method tgamma : double ($x : double);>
 
-Calls the L<tgamma|https://linux.die.net/man/3/tgamma> function defined in C<math.h> in the C language and returns its return value.
+Calls L<tgamma|https://linux.die.net/man/3/tgamma> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 tgammaf
 
 C<static method tgammaf : float ($x : float);>
 
-Calls the L<tgammaf|https://linux.die.net/man/3/tgammaf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<tgammaf|https://linux.die.net/man/3/tgammaf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 trunc
 
 C<static method trunc : double ($x : double);>
 
-Calls the L<trunc|https://linux.die.net/man/3/trunc> function defined in C<math.h> in the C language and returns its return value.
+Calls L<trunc|https://linux.die.net/man/3/trunc> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 truncf
 
 C<static method truncf : float ($x : float);>
 
-Calls the L<truncf|https://linux.die.net/man/3/truncf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<truncf|https://linux.die.net/man/3/truncf> function defined in C<math.h> in the C language and returns its return value.
 
 =head1 Copyright & License
 
