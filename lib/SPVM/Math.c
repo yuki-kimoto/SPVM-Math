@@ -146,9 +146,9 @@ int32_t SPVM__Math__cabs(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double z_out = cabs(z);
+  double z_ret = cabs(z);
 
-  stack[0].dval = z_out;
+  stack[0].dval = z_ret;
 
   return 0;
 }
@@ -160,9 +160,9 @@ int32_t SPVM__Math__cabsf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float z_out = cabsf(z);
+  float z_ret = cabsf(z);
 
-  stack[0].fval = z_out;
+  stack[0].fval = z_ret;
 
   return 0;
 }
@@ -174,10 +174,10 @@ int32_t SPVM__Math__cacos(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = cacos(z);
+  double complex z_ret = cacos(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -189,10 +189,10 @@ int32_t SPVM__Math__cacosf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = cacosf(z);
+  float complex z_ret = cacosf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -204,10 +204,10 @@ int32_t SPVM__Math__cacosh(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = cacosh(z);
+  double complex z_ret = cacosh(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -219,10 +219,10 @@ int32_t SPVM__Math__cacoshf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = cacoshf(z);
+  float complex z_ret = cacoshf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -234,9 +234,9 @@ int32_t SPVM__Math__carg(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double z_out = carg(z);
+  double z_ret = carg(z);
 
-  stack[0].dval = creal(z_out);
+  stack[0].dval = creal(z_ret);
 
   return 0;
 }
@@ -248,9 +248,9 @@ int32_t SPVM__Math__cargf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float z_out = cargf(z);
+  float z_ret = cargf(z);
 
-  stack[0].fval = z_out;
+  stack[0].fval = z_ret;
 
   return 0;
 }
@@ -262,10 +262,10 @@ int32_t SPVM__Math__casin(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = casin(z);
+  double complex z_ret = casin(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -277,10 +277,10 @@ int32_t SPVM__Math__casinf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = casinf(z);
+  float complex z_ret = casinf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -292,10 +292,10 @@ int32_t SPVM__Math__casinh(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = casinh(z);
+  double complex z_ret = casinh(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -307,10 +307,10 @@ int32_t SPVM__Math__casinhf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = casinhf(z);
+  float complex z_ret = casinhf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -322,10 +322,10 @@ int32_t SPVM__Math__catan(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = catan(z);
+  double complex z_ret = catan(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -337,10 +337,10 @@ int32_t SPVM__Math__catanf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = catanf(z);
+  float complex z_ret = catanf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -352,10 +352,10 @@ int32_t SPVM__Math__catanh(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = catanh(z);
+  double complex z_ret = catanh(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -367,10 +367,10 @@ int32_t SPVM__Math__catanhf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = catanhf(z);
+  float complex z_ret = catanhf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -402,10 +402,10 @@ int32_t SPVM__Math__ccos(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = ccos(z);
+  double complex z_ret = ccos(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -417,10 +417,10 @@ int32_t SPVM__Math__ccosf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = ccosf(z);
+  float complex z_ret = ccosf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -432,10 +432,10 @@ int32_t SPVM__Math__ccosh(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = ccosh(z);
+  double complex z_ret = ccosh(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -447,10 +447,10 @@ int32_t SPVM__Math__ccoshf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = ccoshf(z);
+  float complex z_ret = ccoshf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -482,10 +482,10 @@ int32_t SPVM__Math__cexp(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = cexp(z);
+  double complex z_ret = cexp(z);
   
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -497,10 +497,10 @@ int32_t SPVM__Math__cexpf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = cexpf(z);
+  float complex z_ret = cexpf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -512,10 +512,10 @@ int32_t SPVM__Math__clog(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = clog(z);
+  double complex z_ret = clog(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -527,10 +527,10 @@ int32_t SPVM__Math__clogf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = clogf(z);
+  float complex z_ret = clogf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -542,10 +542,10 @@ int32_t SPVM__Math__conj(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = conj(z);
+  double complex z_ret = conj(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -557,10 +557,10 @@ int32_t SPVM__Math__conjf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = conjf(z);
+  float complex z_ret = conjf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -636,10 +636,10 @@ int32_t SPVM__Math__cpow(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z_pow = x_pow + y_pow * _Complex_I;
 
-  double complex z_out = cpow(z, z_pow);
+  double complex z_ret = cpow(z, z_pow);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -656,10 +656,10 @@ int32_t SPVM__Math__cpowf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z_pow = x_pow + y_pow * _Complex_I;
 
-  float complex z_out = cpowf(z, z_pow);
+  float complex z_ret = cpowf(z, z_pow);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -671,10 +671,10 @@ int32_t SPVM__Math__csin(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = csin(z);
+  double complex z_ret = csin(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -686,10 +686,10 @@ int32_t SPVM__Math__csinf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = csinf(z);
+  float complex z_ret = csinf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -701,10 +701,10 @@ int32_t SPVM__Math__csinh(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = csinh(z);
+  double complex z_ret = csinh(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -716,10 +716,10 @@ int32_t SPVM__Math__csinhf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = csinhf(z);
+  float complex z_ret = csinhf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -731,10 +731,10 @@ int32_t SPVM__Math__csqrt(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = csqrt(z);
+  double complex z_ret = csqrt(z);
   
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -746,10 +746,10 @@ int32_t SPVM__Math__csqrtf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = csqrtf(z);
+  float complex z_ret = csqrtf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -761,10 +761,10 @@ int32_t SPVM__Math__ctan(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   double complex z = re + im * _Complex_I;
 
-  double complex z_out = ctan(z);
+  double complex z_ret = ctan(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -776,10 +776,10 @@ int32_t SPVM__Math__ctanf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
   float complex z = re + im * _Complex_I;
 
-  float complex z_out = ctanf(z);
+  float complex z_ret = ctanf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
@@ -792,10 +792,10 @@ int32_t SPVM__Math__ctanh(SPVM_ENV* env, SPVM_VALUE* stack) {
   double complex z = re + im * _Complex_I;
   
   // In some mac OS, ctanh can't right value, so I calcurate from definition
-  double complex z_out = csinh(z) / ccosh(z);
+  double complex z_ret = csinh(z) / ccosh(z);
 
-  stack[0].dval = creal(z_out);
-  stack[1].dval = cimag(z_out);
+  stack[0].dval = creal(z_ret);
+  stack[1].dval = cimag(z_ret);
 
   return 0;
 }
@@ -808,10 +808,10 @@ int32_t SPVM__Math__ctanhf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float complex z = re + im * _Complex_I;
 
   // In some mac OS, ctanh can't right value, so I calcurate from definition
-  float complex z_out = csinhf(z) / ccoshf(z);
+  float complex z_ret = csinhf(z) / ccoshf(z);
 
-  stack[0].fval = crealf(z_out);
-  stack[1].fval = cimagf(z_out);
+  stack[0].fval = crealf(z_ret);
+  stack[1].fval = cimagf(z_ret);
 
   return 0;
 }
