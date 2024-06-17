@@ -440,6 +440,18 @@ Calls the C<csub> function of the C language defined in C<complex.h>.
 
 Calls the C<csubf> function of the C language defined in C<complex.h>.
 
+=head2 cneg
+
+  static method cneg : Complex_2d ($z : Complex_2d);
+
+Negates the sign of $z and returns it.
+
+=head2 cnegf
+
+  static method cnegf : Complex_2f ($z : Complex_2f);
+
+Negates the sign of $z and returns it.
+
 =head2 ctan
 
   static method ctan : Complex_2d ($z : Complex_2d);

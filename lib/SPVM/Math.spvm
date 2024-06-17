@@ -161,6 +161,20 @@ class Math : precompile {
     $z_out->{im} = $z1->{im} - $z2->{im};
     return $z_out;
   }
+
+  static method cneg : Complex_2d ($z : Complex_2d) {
+    my $z_out : Complex_2d;
+    $z_out->{re} = -$z->{re};
+    $z_out->{im} = -$z->{im};
+    return $z_out;
+  }
+  
+  static method cnegf : Complex_2f ($z : Complex_2f) {
+    my $z_out : Complex_2f;
+    $z_out->{re} = -$z->{re};
+    $z_out->{im} = -$z->{im};
+    return $z_out;
+  }
   
   native static method ctan : Complex_2d ($z : Complex_2d);
   native static method ctanf : Complex_2f ($z : Complex_2f);
