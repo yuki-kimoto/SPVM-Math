@@ -584,25 +584,25 @@ Calls L<fdimf|https://linux.die.net/man/3/fdimf> function defined in C<math.h> i
 
 C<static method FE_DOWNWARD : int ();>
 
-Calls C<FE_DOWNWARD> macro defined in C<fenv.h> in the C language.
+Returns the value of C<FE_DOWNWARD> macro defined in C<fenv.h> in the C language.
 
 =head2 FE_TONEAREST
 
 C<static method FE_TONEAREST : int ();>
 
-Calls C<FE_TONEAREST> macro defined in C<fenv.h> in the C language.
+Returns the value of C<FE_TONEAREST> macro defined in C<fenv.h> in the C language.
 
 =head2 FE_TOWARDZERO
 
 C<static method FE_TOWARDZERO : int ();>
 
-Calls C<FE_TOWARDZERO> macro defined in C<fenv.h> in the C language.
+Returns the value of C<FE_TOWARDZERO> macro defined in C<fenv.h> in the C language.
 
 =head2 FE_UPWARD
 
 C<static method FE_UPWARD : int ();>
 
-Calls C<FE_UPWARD> macro defined in C<fenv.h> in the C language.
+Returns the value of C<FE_UPWARD> macro defined in C<fenv.h> in the C language.
 
 =head2 fesetround
 
@@ -674,43 +674,43 @@ Calls L<fmodf|https://linux.die.net/man/3/fmodf> function defined in C<math.h> i
 
 C<static method FP_ILOGB0 : int ();>
 
-Calls C<FP_ILOGB0> macro defined in C<fenv.h> in the C language.
+Return the value of C<FP_ILOGB0> macro defined in C<fenv.h> in the C language.
 
 =head2 FP_ILOGBNAN
 
 C<static method FP_ILOGBNAN : int ();>
 
-Calls C<FP_ILOGBNAN> macro defined in C<fenv.h> in the C language.
+Return the value of C<FP_ILOGBNAN> macro defined in C<fenv.h> in the C language.
 
 =head2 FP_INFINITE
 
 C<static method FP_INFINITE : int ();>
 
-Calls C<FP_INFINITE> macro defined in C<fenv.h> in the C language.
+Return the value of C<FP_INFINITE> macro defined in C<fenv.h> in the C language.
 
 =head2 FP_NAN
 
 C<static method FP_NAN : int ();>
 
-Calls C<FP_NAN> macro defined in C<fenv.h> in the C language.
+Return the value of C<FP_NAN> macro defined in C<fenv.h> in the C language.
 
 =head2 FP_ZERO
 
 C<static method FP_ZERO : int ();>
 
-Calls C<FP_ZERO> macro defined in C<fenv.h> in the C language.
+Return the value of C<FP_ZERO> macro defined in C<fenv.h> in the C language.
 
 =head2 fpclassify
 
 C<static method fpclassify : int ($x : double);>
 
-Calls L<fpclassify|https://linux.die.net/man/3/fpclassify> macro defined in C<math.h>> in the C language with the double argument $x.
+Calls L<fpclassify|https://linux.die.net/man/3/fpclassify> function defined in C<math.h> in the C language.
 
 =head2 fpclassifyf
 
 C<static method fpclassifyf : int ($x : float);>
 
-Calls L<fpclassify|https://linux.die.net/man/3/fpclassify> macro defined in C<math.h>> in the C language with the float argument $x.
+Calls L<fpclassify|https://linux.die.net/man/3/fpclassify> function defined in C<math.h> in the C language.
 
 =head2 frexp
 
@@ -728,13 +728,13 @@ Calls L<frexpf|https://linux.die.net/man/3/frexpf> function defined in C<math.h>
 
 C<static method HUGE_VAL : double ();>
 
-Calls C<HUGE_VAL> macro defined in C<math.h> in the C language and returns its return value.
+Returns the value of C<HUGE_VAL> macro defined in C<math.h> in the C language and returns its return value.
 
 =head2 HUGE_VALF
 
 C<static method HUGE_VALF : float ();>
 
-Calls C<HUGE_VALF> macro defined in C<math.h> in the C language and returns its return value.
+Returns the value of C<HUGE_VALF> macro defined in C<math.h> in the C language and returns its return value.
 
 =head2 hypot
 
@@ -764,127 +764,127 @@ Calls L<ilogbf|https://linux.die.net/man/3/ilogbf> function defined in C<math.h>
 
 C<static method INFINITY : double ();>
 
-Calls L<INFINITY|https://linux.die.net/man/3/INFINITY> macro defined in C<math.h>> in the C language, and returns the return value as a dobule value.
+Returns the value of C<INFINITY> macro defined in C<math.h> in the C language, and returns the return value as a dobule value.
 
 =head2 INFINITYF
 
 C<static method INFINITYF : float ();>
 
-Calls L<INFINITY|https://linux.die.net/man/3/INFINITY> macro defined in C<math.h>> in the C language, and the return value as a float value.
+Returns the value of C<INFINITY> macro defined in C<math.h> in the C language, and the return value as a float value.
 
 =head2 isfinite
 
 C<static method isfinite : int ($x : double);>
 
-Calls L<isfinite|https://linux.die.net/man/3/isfinite> macro defined in C<math.h>> in the C language with the double argument $x.
+Calls L<isfinite|https://linux.die.net/man/3/isfinite> function defined in C<math.h> in the C language.
 
 =head2 isfinitef
 
 C<static method isfinitef : int ($x : float);>
 
-Calls L<isfinite|https://linux.die.net/man/3/isfinite> macro defined in C<math.h>> in the C language with the float argument $x.
+Calls L<isfinite|https://linux.die.net/man/3/isfinite> function defined in C<math.h> in the C language.
 
 =head2 isgreater
 
 C<static method isgreater : int ($x : double, $y : double);>
 
-Calls L<isgreater|https://linux.die.net/man/3/isgreater> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
+Calls L<isgreater|https://linux.die.net/man/3/isgreater> function defined in C<math.h> in the C language.
 
 =head2 isgreaterequal
 
 C<static method isgreaterequal : int ($x : double, $y : double);>
 
-Calls L<isgreaterequal|https://linux.die.net/man/3/isgreaterequal> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
+Calls L<isgreaterequal|https://linux.die.net/man/3/isgreaterequal> function defined in C<math.h> in the C language.
 
 =head2 isgreaterequalf
 
 C<static method isgreaterequalf : int ($x : float, $y : float);>
 
-Calls L<isgreaterequal|https://linux.die.net/man/3/isgreaterequal> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
+Calls L<isgreaterequal|https://linux.die.net/man/3/isgreaterequal> function defined in C<math.h> in the C language.
 
 =head2 isgreaterf
 
 C<static method isgreaterf : int ($x : float, $y : float);>
 
-Calls L<isgreater|https://linux.die.net/man/3/isgreater> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
+Calls L<isgreater|https://linux.die.net/man/3/isgreater> function defined in C<math.h> in the C language.
 
 =head2 isinf
 
 C<static method isinf : int ($x : double);>
 
-Calls L<isinf|https://linux.die.net/man/3/isinf> macro defined in C<math.h>> in the C language with the double argument $x.
+Calls L<isinf|https://linux.die.net/man/3/isinf> function defined in C<math.h> in the C language.
 
 =head2 isinff
 
 C<static method isinff : int($x : float);>
 
-Calls L<isinf|https://linux.die.net/man/3/isinf> macro defined in C<math.h>> in the C language with the float argument $x.
+Calls L<isinf|https://linux.die.net/man/3/isinf> function defined in C<math.h> in the C language.
 
 =head2 isless
 
 C<static method isless : int ($x : double, $y : double);>
 
-Calls L<isless|https://linux.die.net/man/3/isless> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
+Calls L<isless|https://linux.die.net/man/3/isless> function defined in C<math.h> in the C language.
 
 =head2 islessequal
 
 C<static method islessequal : int ($x : double, $y : double);>
 
-Calls L<islessequal|https://linux.die.net/man/3/islessequal> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
+Calls L<islessequal|https://linux.die.net/man/3/islessequal> function defined in C<math.h> in the C language.
 
 =head2 islessequalf
 
 C<static method islessequalf : int ($x : float, $y : float);>
 
-Calls L<islessequalf|https://linux.die.net/man/3/islessequalf> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
+Calls L<islessequal|https://linux.die.net/man/3/islessequal> function defined in C<math.h> in the C language.
 
 =head2 islessf
 
 C<static method islessf : int ($x : float, $y : float);>
 
-Calls L<islessf|https://linux.die.net/man/3/islessf> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
+Calls L<isless|https://linux.die.net/man/3/isless> function defined in C<math.h> in the C language.
 
 =head2 islessgreater
 
 C<static method islessgreater : int ($x : double, $y : double);>
 
-Calls L<islessgreater|https://linux.die.net/man/3/islessgreater> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
+Calls L<islessgreater|https://linux.die.net/man/3/islessgreater> function defined in C<math.h> in the C language.
 
 =head2 islessgreaterf
 
 C<static method islessgreaterf : int ($x : float, $y : float);>
 
-Calls L<islessgreater|https://linux.die.net/man/3/islessgreater> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
+Calls L<islessgreater|https://linux.die.net/man/3/islessgreater> function defined in C<math.h> in the C language.
 
 =head2 isnan
 
 C<static method isnan : int ($x : double);>
 
-Calls L<isnan|https://linux.die.net/man/3/isnan> macro defined in C<math.h>> in the C language with the double argument $x.
+Calls L<isnan|https://linux.die.net/man/3/isnan> function defined in C<math.h> in the C language.
 
 =head2 isnanf
 
 C<static method isnanf : int ($x : float);>
 
-Calls L<isnanf|https://linux.die.net/man/3/isnanf> macro defined in C<math.h>> in the C language with the float argument $x.
+Calls L<isnanf|https://linux.die.net/man/3/isnan> function defined in C<math.h> in the C language.
 
 =head2 isunordered
 
 C<static method isunordered : int ($x : double, $y : double);>
 
-Calls L<isunordered|https://linux.die.net/man/3/isunordered> macro defined in C<math.h>> in the C language with the double arguments $x and $y.
+Calls L<isunordered|https://linux.die.net/man/3/isunordered> function defined in C<math.h> in the C language.
 
 =head2 isunorderedf
 
 C<static method isunorderedf : int ($x : float, $y : float);>
 
-Calls L<isunorderedf|https://linux.die.net/man/3/isunorderedf> macro defined in C<math.h>> in the C language with the float arguments $x and $y.
+Calls L<isunordered|https://linux.die.net/man/3/isunordered> function defined in C<math.h> in the C language.
 
 =head2 labs
 
 C<static method labs : long ($x : long);>
 
-Returns the abusolute value of the long value $x.
+Returns the abusolute value of $x.
 
 =head2 ldexp
 
@@ -998,7 +998,7 @@ Calls L<modff|https://linux.die.net/man/3/modff> function defined in C<math.h> i
 
 C<static method NAN : double ();>
 
-Calls L<NAN|https://linux.die.net/man/3/NAN> macro defined in C<math.h>> in the C language, and return the return value as a double type.
+Returns the value of C<NAN> macro defined in C<math.h> in the C language.
 
 =head2 nan
 
@@ -1014,7 +1014,7 @@ The $string must be defined. Otherwise an exception is thrown.
 
 C<static method NANF : float ();>
 
-Calls L<NAN|https://linux.die.net/man/3/NAN> macro defined in C<math.h>> in the C language, and return the return value as a float type.
+Returns the value of C<NAN> macro defined in C<math.h> in the C language, and return the return value as a float type.
 
 =head2 nanf
 
@@ -1150,7 +1150,7 @@ Calls L<signbit|https://linux.die.net/man/3/signbit> function defined in C<math.
 
 C<static method signbitf : int ($x : float);>
 
-Calls L<signbitf|https://linux.die.net/man/3/signbitf> function defined in C<math.h> in the C language and returns its return value.
+Calls L<signbit|https://linux.die.net/man/3/signbit> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 sin
 
