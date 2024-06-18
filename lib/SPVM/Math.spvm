@@ -36,6 +36,8 @@ class Math : precompile {
   
   native static method atan2 : double ($y : double, $x : double);
   
+  native static method atan2f : float ($y : float, $x : float);
+  
   native static method atanf : float ($x : float);
   
   native static method atanh : double ($x : double);
