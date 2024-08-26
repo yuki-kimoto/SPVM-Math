@@ -19,3 +19,4 @@ MANIFEST.SKIP
 README.md
 t/basic.t
 t/lib/SPVM/TestCase/Math.spvm
+t/spvm-core.t
