@@ -55,8 +55,8 @@ WriteMakefile(
     resources => {
       repository => {
         type => 'git',
-        url  => 'https://github.com/yuki-kimoto/Perl-SPVM-Math.git',
-        web  => 'https://github.com/yuki-kimoto/Perl-SPVM-Math',
+        url  => 'https://github.com/yuki-kimoto/SPVM-Math.git',
+        web  => 'https://github.com/yuki-kimoto/SPVM-Math',
       },
     },
   },
