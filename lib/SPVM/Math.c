@@ -929,7 +929,6 @@ int32_t SPVM__Math__fdimf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__FE_DOWNWARD(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].ival = FE_DOWNWARD;
   
@@ -937,7 +936,6 @@ int32_t SPVM__Math__FE_DOWNWARD(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__FE_TONEAREST(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].ival = FE_TONEAREST;
   
@@ -945,7 +943,6 @@ int32_t SPVM__Math__FE_TONEAREST(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__FE_TOWARDZERO(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].ival = FE_TOWARDZERO;
   
@@ -953,7 +950,6 @@ int32_t SPVM__Math__FE_TOWARDZERO(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__FE_UPWARD(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].ival = FE_UPWARD;
   
@@ -961,7 +957,6 @@ int32_t SPVM__Math__FE_UPWARD(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__fesetround(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   int32_t ival = stack[0].ival;
   
@@ -1061,7 +1056,6 @@ int32_t SPVM__Math__fmodf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__FP_ILOGB0(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].ival = FP_ILOGB0;
   
@@ -1069,7 +1063,6 @@ int32_t SPVM__Math__FP_ILOGB0(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__FP_ILOGBNAN(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].ival = FP_ILOGBNAN;
   
@@ -1077,7 +1070,6 @@ int32_t SPVM__Math__FP_ILOGBNAN(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__FP_INFINITE(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].ival = FP_INFINITE;
   
@@ -1085,7 +1077,6 @@ int32_t SPVM__Math__FP_INFINITE(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__FP_NAN(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].ival = FP_NAN;
   
@@ -1093,7 +1084,6 @@ int32_t SPVM__Math__FP_NAN(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__FP_ZERO(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].ival = FP_ZERO;
   
@@ -1101,7 +1091,6 @@ int32_t SPVM__Math__FP_ZERO(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__fpclassify(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   double dval = stack[0].dval;
   
@@ -1111,7 +1100,6 @@ int32_t SPVM__Math__fpclassify(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__fpclassifyf(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   float fval = stack[0].fval;
   
@@ -1139,7 +1127,6 @@ int32_t SPVM__Math__frexpf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__HUGE_VAL(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].dval = (double)HUGE_VAL;
   
@@ -1147,7 +1134,6 @@ int32_t SPVM__Math__HUGE_VAL(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__HUGE_VALF(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].fval = (float)HUGE_VALF;
   
@@ -1191,7 +1177,6 @@ int32_t SPVM__Math__ilogbf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__INFINITY(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].dval = (double)INFINITY;
   
@@ -1199,7 +1184,6 @@ int32_t SPVM__Math__INFINITY(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__INFINITYF(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].fval = (float)INFINITY;
   
@@ -1207,7 +1191,6 @@ int32_t SPVM__Math__INFINITYF(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__isfinite(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   double dval = stack[0].dval;
   
@@ -1217,7 +1200,6 @@ int32_t SPVM__Math__isfinite(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__isfinitef(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   float fval = stack[0].fval;
   
@@ -1263,7 +1245,6 @@ int32_t SPVM__Math__isgreaterf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__isinf(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   double dval = stack[0].dval;
   
@@ -1273,7 +1254,6 @@ int32_t SPVM__Math__isinf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__isinff(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   float fval = stack[0].fval;
   
@@ -1337,7 +1317,6 @@ int32_t SPVM__Math__islessgreaterf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__isnan(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   double dval = stack[0].dval;
   
@@ -1347,7 +1326,6 @@ int32_t SPVM__Math__isnan(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__isnanf(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   float fval = stack[0].fval;
   
@@ -1552,7 +1530,6 @@ int32_t SPVM__Math__nan(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__NAN(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].dval = (double)NAN;
   
@@ -1575,7 +1552,6 @@ int32_t SPVM__Math__nanf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__NANF(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   stack[0].fval = (float)NAN;
   
@@ -1745,7 +1721,6 @@ int32_t SPVM__Math__scalbnf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__signbit(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   double dval = stack[0].dval;
   
@@ -1755,7 +1730,6 @@ int32_t SPVM__Math__signbit(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__signbitf(SPVM_ENV* env, SPVM_VALUE* stack) {
-  (void)stack;
   
   float fval = stack[0].fval;
   
