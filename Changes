@@ -1,6 +1,8 @@
 1.005  2025-01-15
   [Makefile.PL Changes]
     * Fix git URL.
+  [Internal Changes]
+    * Update .gitignore and MANIFEST.SKIP.
     
 1.004001  2024-08-26
   [Test Improvement]
