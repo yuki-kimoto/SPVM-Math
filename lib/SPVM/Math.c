@@ -1514,7 +1514,15 @@ int32_t SPVM__Math__lroundf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
 int32_t SPVM__Math__modf(SPVM_ENV* env, SPVM_VALUE* stack) {
   
-  double ret = modf(stack[0].dval, stack[1].dref);
+  double x = stack[0].dval;
+  
+  double* intpart_ref = stack[1].dref;
+  
+  if (!intpart_ref) {
+    return env->die(env, stack, "The reference of the integer part $intpart_ref must be defined.", __func__, MFILE, __LINE__);
+  }
+  
+  double ret = modf(x, intpart_ref);
   
   stack[0].dval = ret;
   
@@ -1523,7 +1531,15 @@ int32_t SPVM__Math__modf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
 int32_t SPVM__Math__modff(SPVM_ENV* env, SPVM_VALUE* stack) {
   
-  float ret = modff(stack[0].fval, stack[1].fref);
+  float x = stack[0].fval;
+  
+  float* intpart_ref = stack[1].fref;
+  
+  if (!intpart_ref) {
+    return env->die(env, stack, "The reference of the integer part $intpart_ref must be defined.", __func__, MFILE, __LINE__);
+  }
+  
+  float ret = modff(x, intpart_ref);
   
   stack[0].fval = ret;
   

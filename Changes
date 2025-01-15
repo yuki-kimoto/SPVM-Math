@@ -6,6 +6,8 @@
   [Exception Changes]
     * Math#frexp method throws an exception if $exp_ref is not defined.
     * Math#frexpf method throws an exception if $exp_ref is not defined.
+    * Math#modf method throws an exception if $intpart_ref is not defined.
+    * Math#modff method throws an exception if $intpart_ref is not defined.
     
 1.004001  2024-08-26
   [Test Improvement]
