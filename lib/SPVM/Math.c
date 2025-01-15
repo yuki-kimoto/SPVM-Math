@@ -1116,7 +1116,9 @@ int32_t SPVM__Math__frexp(SPVM_ENV* env, SPVM_VALUE* stack) {
     return env->die(env, stack, "The reference of the exponent $exp_ref must be defined.", __func__, MFILE, __LINE__);
   }
   
-  double ret = frexp(x, exp_ref);
+  int exp_tmp;
+  double ret = frexp(x, &exp_tmp);
+  *exp_ref = exp_tmp;
   
   stack[0].dval = ret;
   
@@ -1133,7 +1135,9 @@ int32_t SPVM__Math__frexpf(SPVM_ENV* env, SPVM_VALUE* stack) {
     return env->die(env, stack, "The reference of the exponent $exp_ref must be defined.", __func__, MFILE, __LINE__);
   }
   
-  float ret = frexpf(x, exp_ref);
+  int exp_tmp;
+  float ret = frexpf(x, &exp_tmp);
+  *exp_ref = exp_tmp;
   
   stack[0].fval = ret;
   
@@ -1690,7 +1694,9 @@ int32_t SPVM__Math__remquo(SPVM_ENV* env, SPVM_VALUE* stack) {
     return env->die(env, stack, "The reference of the quotient part $quo_ref must be defined.", __func__, MFILE, __LINE__);
   }
   
-  double ret = remquo(x, y, quo_ref);
+  int quo_tmp;
+  double ret = remquo(x, y, &quo_tmp);
+  *quo_ref = quo_tmp;
   
   stack[0].dval = ret;
   
@@ -1709,7 +1715,9 @@ int32_t SPVM__Math__remquof(SPVM_ENV* env, SPVM_VALUE* stack) {
     return env->die(env, stack, "The reference of the quotient part $quo_ref must be defined.", __func__, MFILE, __LINE__);
   }
   
-  float ret = remquof(x, y, quo_ref);
+  int quo_tmp;
+  float ret = remquof(x, y, &quo_tmp);
+  *quo_ref = quo_tmp;
   
   stack[0].fval = ret;
   
