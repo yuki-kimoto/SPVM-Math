@@ -1127,7 +1127,15 @@ int32_t SPVM__Math__frexp(SPVM_ENV* env, SPVM_VALUE* stack) {
 
 int32_t SPVM__Math__frexpf(SPVM_ENV* env, SPVM_VALUE* stack) {
   
-  float ret = frexpf(stack[0].fval, stack[1].iref);
+  float x = stack[0].fval;
+  
+  int32_t* exp_ref = stack[1].iref;
+  
+  if (!exp_ref) {
+    return env->die(env, stack, "The reference of the exponent $exp_ref must be defined.", __func__, MFILE, __LINE__);
+  }
+  
+  float ret = frexpf(x, exp_ref);
   
   stack[0].fval = ret;
   
