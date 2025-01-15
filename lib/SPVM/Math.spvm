@@ -295,7 +295,7 @@ class Math : precompile {
   
   native static method frexp : double ($x : double, $exp_ref : int*);
   
-  native static method frexpf : float ($x : float, $exp : int*);
+  native static method frexpf : float ($x : float, $exp_ref : int*);
   
   native static method HUGE_VAL : double ();
   
@@ -390,9 +390,9 @@ class Math : precompile {
   
   native static method lroundf : long ($x : float);
   
-  native static method modf : double ($x : double, $intpart : double*);
+  native static method modf : double ($x : double, $intpart_ref : double*);
   
-  native static method modff : float ($x : float, $intpart : float*);
+  native static method modff : float ($x : float, $intpart_ref : float*);
   
   native static method nan : double ($string : string);
   
@@ -424,9 +424,9 @@ class Math : precompile {
   
   native static method remainderf : float ($x : float, $y : float);
   
-  native static method remquo : double ($x : double, $y : double, $quo : int*);
+  native static method remquo : double ($x : double, $y : double, $quo_ref : int*);
   
-  native static method remquof : float ($x : float, $y : float, $quo : int*);
+  native static method remquof : float ($x : float, $y : float, $quo_ref : int*);
   
   native static method round : double ($x : double);
   

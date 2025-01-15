@@ -718,7 +718,7 @@ The reference of the exponent $exp_ref must be defined. Otherwise an exception i
 
 =head2 frexpf
 
-C<static method frexpf : float ($x : float, $exp : int*);>
+C<static method frexpf : float ($x : float, $exp_ref : int*);>
 
 Calls L<frexpf|https://linux.die.net/man/3/frexpf> function defined in C<math.h> in the C language and returns its return value.
 
@@ -982,13 +982,13 @@ Calls L<llroundf|https://linux.die.net/man/3/llroundf> function defined in C<mat
 
 =head2 modf
 
-C<static method modf : double ($x : double, $intpart : double*);>
+C<static method modf : double ($x : double, $intpart_ref : double*);>
 
 Calls L<modf|https://linux.die.net/man/3/modf> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 modff
 
-C<static method modff : float ($x : float, $intpart : float*);>
+C<static method modff : float ($x : float, $intpart_ref : float*);>
 
 Calls L<modff|https://linux.die.net/man/3/modff> function defined in C<math.h> in the C language and returns its return value.
 
@@ -1092,13 +1092,13 @@ Calls L<remainderf|https://linux.die.net/man/3/remainderf> function defined in C
 
 =head2 remquo
 
-C<static method remquo : double ($x : double, $y : double, $quo : int*);>
+C<static method remquo : double ($x : double, $y : double, $quo_ref : int*);>
 
 Calls L<remquo|https://linux.die.net/man/3/remquo> function defined in C<math.h> in the C language and returns its return value.
 
 =head2 remquof
 
-C<static method remquof : float ($x : float, $y : float, $quo : int*);>
+C<static method remquof : float ($x : float, $y : float, $quo_ref : int*);>
 
 Calls L<remquof|https://linux.die.net/man/3/remquof> function defined in C<math.h> in the C language and returns its return value.
 
