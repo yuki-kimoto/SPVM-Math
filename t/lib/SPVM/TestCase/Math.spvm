@@ -2060,6 +2060,15 @@ class TestCase::Math {
     unless ($got_quo == $expected_quo) {
       return 0;
     }
+    # Exceptions
+    {
+      eval { Math->remquo(Math->PI, 2.0, undef); }
+      
+      unless ($@) {
+        return 0;
+      }
+    }
+    
     return 1;
   }
 
@@ -2075,9 +2084,19 @@ class TestCase::Math {
     unless ($got_quo == $expected_quo) {
       return 0;
     }
+    
+    # Exceptions
+    {
+      eval { Math->remquof((float)Math->PI, 2.0f, undef); }
+      
+      unless ($@) {
+        return 0;
+      }
+    }
+    
     return 1;
   }
-
+  
   static method copysign : int () {
     {
       my $eps = 0.000000001;

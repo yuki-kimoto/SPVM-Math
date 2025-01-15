@@ -1682,7 +1682,17 @@ int32_t SPVM__Math__remainderf(SPVM_ENV* env, SPVM_VALUE* stack) {
 
 int32_t SPVM__Math__remquo(SPVM_ENV* env, SPVM_VALUE* stack) {
   
-  double ret = remquo(stack[0].dval, stack[1].dval, stack[2].iref);
+  double x = stack[0].dval;
+  
+  double y = stack[1].dval;
+  
+  int32_t* quo_ref = stack[2].iref;
+  
+  if (!quo_ref) {
+    return env->die(env, stack, "The reference of the quotient part $quo_ref must be defined.", __func__, MFILE, __LINE__);
+  }
+  
+  double ret = remquo(x, y, quo_ref);
   
   stack[0].dval = ret;
   
@@ -1691,7 +1701,17 @@ int32_t SPVM__Math__remquo(SPVM_ENV* env, SPVM_VALUE* stack) {
 
 int32_t SPVM__Math__remquof(SPVM_ENV* env, SPVM_VALUE* stack) {
   
-  float ret = remquof(stack[0].fval, stack[1].fval, stack[2].iref);
+  float x = stack[0].dval;
+  
+  float y = stack[1].dval;
+  
+  int32_t* quo_ref = stack[2].iref;
+  
+  if (!quo_ref) {
+    return env->die(env, stack, "The reference of the quotient part $quo_ref must be defined.", __func__, MFILE, __LINE__);
+  }
+  
+  float ret = remquof(x, y, quo_ref);
   
   stack[0].fval = ret;
   

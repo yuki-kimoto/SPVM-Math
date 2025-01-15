@@ -986,11 +986,19 @@ C<static method modf : double ($x : double, $intpart_ref : double*);>
 
 Calls L<modf|https://linux.die.net/man/3/modf> function defined in C<math.h> in the C language and returns its return value.
 
+Exceptions:
+
+The reference of the int part $intpart_ref must be defined. Otherwise an exception is thrown.
+
 =head2 modff
 
 C<static method modff : float ($x : float, $intpart_ref : float*);>
 
 Calls L<modff|https://linux.die.net/man/3/modff> function defined in C<math.h> in the C language and returns its return value.
+
+Exceptions:
+
+The reference of the int part $intpart_ref must be defined. Otherwise an exception is thrown.
 
 =head2 NAN
 
@@ -1096,11 +1104,19 @@ C<static method remquo : double ($x : double, $y : double, $quo_ref : int*);>
 
 Calls L<remquo|https://linux.die.net/man/3/remquo> function defined in C<math.h> in the C language and returns its return value.
 
+Exceptions:
+
+The reference of the quotient part $quo_ref must be defined. Otherwise an exception is thrown.
+
 =head2 remquof
 
 C<static method remquof : float ($x : float, $y : float, $quo_ref : int*);>
 
 Calls L<remquof|https://linux.die.net/man/3/remquof> function defined in C<math.h> in the C language and returns its return value.
+
+Exceptions:
+
+The reference of the quotient part $quo_ref must be defined. Otherwise an exception is thrown.
 
 =head2 round
 
