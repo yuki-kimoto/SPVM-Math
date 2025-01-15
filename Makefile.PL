@@ -81,9 +81,6 @@ sub MY::postamble {
     require SPVM::Builder::Util::API;
     # Native compile make rule
     $make_rule .= SPVM::Builder::Util::API::create_make_rule_native('Math');
-
-    # Native compile make rule
-    $make_rule .= SPVM::Builder::Util::API::create_make_rule_precompile('Math');
   }
   
   return $make_rule;

@@ -3,6 +3,7 @@
     * Fix git URL.
   [Internal Changes]
     * Update .gitignore and MANIFEST.SKIP.
+    * Remove precompile class attribute.
   [Exception Changes]
     * Math#frexp method throws an exception if $exp_ref is not defined.
     * Math#frexpf method throws an exception if $exp_ref is not defined.
