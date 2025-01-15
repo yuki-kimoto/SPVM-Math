@@ -13,11 +13,11 @@ class TestCase::Math {
   }
 
   static method PI : int () {
-    unless (Math->PI() == 3.14159265358979323846) {
+    unless (Math->PI == 3.14159265358979323846) {
       return 0;
     }
 
-    unless (Math->PI() == 0x1.921fb54442d18p+1) {
+    unless (Math->PI == 0x1.921fb54442d18p+1) {
       return 0;
     }
 
@@ -896,7 +896,7 @@ class TestCase::Math {
 
   # Trigonometric functions
   static method cos : int () {
-    my $value = Math->cos(Math->PI() / 2.0);
+    my $value = Math->cos(Math->PI / 2.0);
 
     if ($value < 0.000001 && $value > -0.000001) {
       return 1;
@@ -905,7 +905,7 @@ class TestCase::Math {
   }
 
   static method cosf : int () {
-    my $value = Math->cosf((float)(Math->PI() / 2.0));
+    my $value = Math->cosf((float)(Math->PI / 2.0));
 
     if ($value < 0.0001f && $value > -0.0001f) {
       return 1;
@@ -914,7 +914,7 @@ class TestCase::Math {
   }
 
   static method sin : int () {
-    my $value = Math->sin(Math->PI());
+    my $value = Math->sin(Math->PI);
 
     if ($value < 0.000001 && $value > -0.000001) {
       return 1;
@@ -923,7 +923,7 @@ class TestCase::Math {
   }
 
   static method sinf : int () {
-    my $value = Math->sinf((float)Math->PI());
+    my $value = Math->sinf((float)Math->PI);
 
     if ($value < 0.0001f && $value > -0.0001f) {
       return 1;
@@ -932,7 +932,7 @@ class TestCase::Math {
   }
 
   static method tan : int () {
-    my $value = Math->tan(Math->PI() / 4.0);
+    my $value = Math->tan(Math->PI / 4.0);
 
     if ($value - 1.0 < 0.000001 && $value - 1.0 > -0.000001) {
       return 1;
@@ -941,7 +941,7 @@ class TestCase::Math {
   }
 
   static method tanf : int () {
-    my $value = Math->tanf((float)(Math->PI() / 4.0));
+    my $value = Math->tanf((float)(Math->PI / 4.0));
 
     if ($value - 1.0 < 0.0001f && $value - 1.0 > -0.0001f) {
       return 1;
@@ -952,7 +952,7 @@ class TestCase::Math {
   static method acos : int () {
     my $eps      = 0.000000001;
     my $got      = Math->acos(0.866025403784438646763723170752936183471402626905190314027);
-    my $expected = Math->PI() / 6;
+    my $expected = Math->PI / 6;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -962,7 +962,7 @@ class TestCase::Math {
   static method acosf : int () {
     my $eps      = 0.0001f;
     my $got      = Math->acosf(0.866025403784438646763723170752936183471402626905190314027f);
-    my $expected = (float)(Math->PI() / 6);
+    my $expected = (float)(Math->PI / 6);
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -972,7 +972,7 @@ class TestCase::Math {
   static method asin : int () {
     my $eps      = 0.000000001;
     my $got      = Math->asin(0.5);
-    my $expected = Math->PI() / 6;
+    my $expected = Math->PI / 6;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -982,7 +982,7 @@ class TestCase::Math {
   static method asinf : int () {
     my $eps      = 0.0001f;
     my $got      = Math->asinf(0.5f);
-    my $expected = (float)(Math->PI() / 6);
+    my $expected = (float)(Math->PI / 6);
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -992,7 +992,7 @@ class TestCase::Math {
   static method atan : int () {
     my $eps      = 0.000000001;
     my $got      = Math->atan(0.577350269189625764509148780501957455647601751270126876018);
-    my $expected = Math->PI() / 6;
+    my $expected = Math->PI / 6;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -1002,7 +1002,7 @@ class TestCase::Math {
   static method atanf : int () {
     my $eps      = 0.0001f;
     my $got      = Math->atanf(0.577350269189625764509148780501957455647601751270126876018f);
-    my $expected = (float)(Math->PI() / 6);
+    my $expected = (float)(Math->PI / 6);
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -1092,7 +1092,7 @@ class TestCase::Math {
 
   static method acosh : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->acosh(Math->PI() / 2);
+    my $got      = Math->acosh(Math->PI / 2);
     my $expected = 1.023227478547550579317495677949303852301405666414862096802;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1102,7 +1102,7 @@ class TestCase::Math {
 
   static method acoshf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->acoshf((float)(Math->PI() / 2));
+    my $got      = Math->acoshf((float)(Math->PI / 2));
     my $expected = 1.023227478547550579317495677949303852301405666414862096802f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1112,7 +1112,7 @@ class TestCase::Math {
 
   static method asinh : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->asinh(Math->PI());
+    my $got      = Math->asinh(Math->PI);
     my $expected = 1.862295743310848219888361325182620574902674184961554765612;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1122,7 +1122,7 @@ class TestCase::Math {
 
   static method asinhf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->asinhf((float)Math->PI());
+    my $got      = Math->asinhf((float)Math->PI);
     my $expected = 1.862295743310848219888361325182620574902674184961554765612f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1172,7 +1172,7 @@ class TestCase::Math {
 
   static method exp2 : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->exp2(Math->PI());
+    my $got      = Math->exp2(Math->PI);
     my $expected = 8.824977827076287623856429604208001581704410815271484926668;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1182,7 +1182,7 @@ class TestCase::Math {
 
   static method exp2f : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->exp2f((float)Math->PI());
+    my $got      = Math->exp2f((float)Math->PI);
     my $expected = 8.824977827076287623856429604208001581704410815271484926668f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1213,7 +1213,7 @@ class TestCase::Math {
   static method frexp : int () {
     my $eps          = 0.000000001;
     my $got_exp : int;
-    my $got          = Math->frexp(Math->PI(), \$got_exp);
+    my $got          = Math->frexp(Math->PI, \$got_exp);
     my $expected_exp = 2;
     my $expected     = 0.78539816339744827900;
     unless ($got_exp == $expected_exp) {
@@ -1225,7 +1225,7 @@ class TestCase::Math {
     
     # Exceptions
     {
-      eval { Math->frexp(Math->PI(), undef); }
+      eval { Math->frexp(Math->PI, undef); }
       
       unless ($@) {
         return 0;
@@ -1238,7 +1238,7 @@ class TestCase::Math {
   static method frexpf : int () {
     my $eps          = 0.0001f;
     my $got_exp : int;
-    my $got          = Math->frexpf((float)Math->PI(), \$got_exp);
+    my $got          = Math->frexpf((float)Math->PI, \$got_exp);
     my $expected_exp = 2;
     my $expected     = 0.78539816339744827900f;
     unless ($got_exp == $expected_exp) {
@@ -1250,7 +1250,7 @@ class TestCase::Math {
     
     # Exceptions
     {
-      eval { Math->frexpf((float)Math->PI(), undef); }
+      eval { Math->frexpf((float)Math->PI, undef); }
       
       unless ($@) {
         return 0;
@@ -1292,7 +1292,7 @@ class TestCase::Math {
 
   static method ldexp : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->ldexp(Math->PI(), 3);
+    my $got      = Math->ldexp(Math->PI, 3);
     my $expected = 25.13274122871834590770114706623602307357735519500084656779;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1302,7 +1302,7 @@ class TestCase::Math {
 
   static method ldexpf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->ldexpf((float)Math->PI(), 3);
+    my $got      = Math->ldexpf((float)Math->PI, 3);
     my $expected = 25.13274122871834590770114706623602307357735519500084656779f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1312,7 +1312,7 @@ class TestCase::Math {
 
   static method log : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->log(Math->PI());
+    my $got      = Math->log(Math->PI);
     my $expected = 1.144729885849400174143427351353058711647294812915311571513;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1322,7 +1322,7 @@ class TestCase::Math {
 
   static method logf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->logf((float)Math->PI());
+    my $got      = Math->logf((float)Math->PI);
     my $expected = 1.144729885849400174143427351353058711647294812915311571513f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1332,7 +1332,7 @@ class TestCase::Math {
 
   static method log10 : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->log10(Math->PI());
+    my $got      = Math->log10(Math->PI);
     my $expected = 0.497149872694133854351268288290898873651678324380442446134;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1342,7 +1342,7 @@ class TestCase::Math {
 
   static method log10f : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->log10f((float)Math->PI());
+    my $got      = Math->log10f((float)Math->PI);
     my $expected = 0.497149872694133854351268288290898873651678324380442446134f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1352,7 +1352,7 @@ class TestCase::Math {
 
   static method log1p : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->log1p(Math->PI());
+    my $got      = Math->log1p(Math->PI);
     my $expected = 1.421080412794292633053772196333719458985758681678943714407;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1362,7 +1362,7 @@ class TestCase::Math {
 
   static method log1pf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->log1pf((float)Math->PI());
+    my $got      = Math->log1pf((float)Math->PI);
     my $expected = 1.421080412794292633053772196333719458985758681678943714407f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1372,7 +1372,7 @@ class TestCase::Math {
 
   static method log2 : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->log2(Math->PI());
+    my $got      = Math->log2(Math->PI);
     my $expected = 1.651496129472318798043279295108007335018476926763041529406;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1382,7 +1382,7 @@ class TestCase::Math {
 
   static method log2f : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->log2f((float)Math->PI());
+    my $got      = Math->log2f((float)Math->PI);
     my $expected = 1.651496129472318798043279295108007335018476926763041529406f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1391,7 +1391,7 @@ class TestCase::Math {
   }
 
   static method logb : int () {
-    my $got      = Math->logb(Math->PI());
+    my $got      = Math->logb(Math->PI);
     my $expected = 1;
     unless ($got == $expected) {
       return 0;
@@ -1400,7 +1400,7 @@ class TestCase::Math {
   }
 
   static method logbf : int () {
-    my $got      = Math->logbf((float)Math->PI());
+    my $got      = Math->logbf((float)Math->PI);
     my $expected = 1f;
     unless ($got == $expected) {
       return 0;
@@ -1411,9 +1411,9 @@ class TestCase::Math {
   static method modf : int () {
     my $eps          = 0.000000001;
     my $got_intpart : double;
-    my $got          = Math->modf(Math->PI(), \$got_intpart);
+    my $got          = Math->modf(Math->PI, \$got_intpart);
     my $expected_intpart = 3.0;
-    my $expected     = Math->PI() - 3.0;
+    my $expected     = Math->PI - 3.0;
     unless ($got_intpart == $expected_intpart) {
       return 0;
     }
@@ -1423,7 +1423,7 @@ class TestCase::Math {
     
     # Exceptions
     {
-      eval { Math->modf(Math->PI(), undef); }
+      eval { Math->modf(Math->PI, undef); }
       
       unless ($@) {
         return 0;
@@ -1436,9 +1436,9 @@ class TestCase::Math {
   static method modff : int () {
     my $eps          = 0.0001f;
     my $got_intpart : float;
-    my $got          = Math->modff((float)Math->PI(), \$got_intpart);
+    my $got          = Math->modff((float)Math->PI, \$got_intpart);
     my $expected_intpart = 3.0f;
-    my $expected     = (float)(Math->PI() - 3.0);
+    my $expected     = (float)(Math->PI - 3.0);
     unless ($got_intpart == $expected_intpart) {
       return 0;
     }
@@ -1448,7 +1448,7 @@ class TestCase::Math {
     
     # Exceptions
     {
-      eval { Math->modff((float)Math->PI(), undef); }
+      eval { Math->modff((float)Math->PI, undef); }
       
       unless ($@) {
         return 0;
@@ -1460,7 +1460,7 @@ class TestCase::Math {
 
   static method scalbn : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->scalbn(Math->PI(), 10);
+    my $got      = Math->scalbn(Math->PI, 10);
     my $expected = 3216.990877275948150781914591789246;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1470,7 +1470,7 @@ class TestCase::Math {
 
   static method scalbnf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->scalbnf((float)Math->PI(), 10);
+    my $got      = Math->scalbnf((float)Math->PI, 10);
     my $expected = 3216.990877275948150781914591789246f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1480,7 +1480,7 @@ class TestCase::Math {
 
   static method scalbln : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->scalbln(Math->PI(), (long)10);
+    my $got      = Math->scalbln(Math->PI, (long)10);
     my $expected = 3216.990877275948150781914591789246;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1490,7 +1490,7 @@ class TestCase::Math {
 
   static method scalblnf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->scalblnf((float)Math->PI(), (long)10);
+    my $got      = Math->scalblnf((float)Math->PI, (long)10);
     my $expected = 3216.990877275948150781914591789246f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1500,7 +1500,7 @@ class TestCase::Math {
 
   static method cbrt : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->cbrt(Math->PI());
+    my $got      = Math->cbrt(Math->PI);
     my $expected = 1.464591887561523263020142527263790391738596855627937174357;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1510,7 +1510,7 @@ class TestCase::Math {
 
   static method cbrtf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->cbrtf((float)Math->PI());
+    my $got      = Math->cbrtf((float)Math->PI);
     my $expected = 1.464591887561523263020142527263790391738596855627937174357f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1579,8 +1579,8 @@ class TestCase::Math {
   
   static method fabs : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->fabs(-Math->PI());
-    my $expected = Math->PI();
+    my $got      = Math->fabs(-Math->PI);
+    my $expected = Math->PI;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -1589,8 +1589,8 @@ class TestCase::Math {
 
   static method fabsf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->fabsf((float)(-Math->PI()));
-    my $expected = (float)Math->PI();
+    my $got      = Math->fabsf((float)(-Math->PI));
+    my $expected = (float)Math->PI;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -1600,7 +1600,7 @@ class TestCase::Math {
   static method hypot : int () {
     my $eps      = 0.000000001;
     my $e        = 2.718281828459045235360287471352662497757247093699959574966;
-    my $got      = Math->hypot(Math->PI(), $e);
+    my $got      = Math->hypot(Math->PI, $e);
     my $expected = 4.154354402313313572948121466679053097883112964956925650570;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1611,7 +1611,7 @@ class TestCase::Math {
   static method hypotf : int () {
     my $eps      = 0.0001f;
     my $e        = 2.718281828459045235360287471352662497757247093699959574966f;
-    my $got      = Math->hypotf((float)Math->PI(), $e);
+    my $got      = Math->hypotf((float)Math->PI, $e);
     my $expected = 4.154354402313313572948121466679053097883112964956925650570f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1621,7 +1621,7 @@ class TestCase::Math {
 
   static method pow : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->pow(Math->PI(), Math->PI());
+    my $got      = Math->pow(Math->PI, Math->PI);
     my $expected = 36.46215960720791177099082602269212366636550840222881873870;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1631,7 +1631,7 @@ class TestCase::Math {
 
   static method powf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->powf((float)Math->PI(), (float)Math->PI());
+    my $got      = Math->powf((float)Math->PI, (float)Math->PI);
     my $expected = 36.46215960720791177099082602269212366636550840222881873870f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1641,7 +1641,7 @@ class TestCase::Math {
 
   static method sqrt : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->sqrt(Math->PI());
+    my $got      = Math->sqrt(Math->PI);
     my $expected = 1.772453850905516027298167483341145182797549456122387128213;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1651,7 +1651,7 @@ class TestCase::Math {
 
   static method sqrtf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->sqrtf((float)Math->PI());
+    my $got      = Math->sqrtf((float)Math->PI);
     my $expected = 1.772453850905516027298167483341145182797549456122387128213f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1661,7 +1661,7 @@ class TestCase::Math {
 
   static method erf : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->erf(Math->PI());
+    my $got      = Math->erf(Math->PI);
     my $expected = 0.999991123853632358394731620781202944712382081512876599047;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1671,7 +1671,7 @@ class TestCase::Math {
 
   static method erff : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->erff((float)Math->PI());
+    my $got      = Math->erff((float)Math->PI);
     my $expected = 0.999991123853632358394731620781202944712382081512876599047f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1681,7 +1681,7 @@ class TestCase::Math {
 
   static method erfc : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->erfc(Math->PI());
+    my $got      = Math->erfc(Math->PI);
     my $expected = 0.0000088761463676416052683792187970552876179184871234009524;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1701,7 +1701,7 @@ class TestCase::Math {
 
   static method lgamma : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->lgamma(Math->PI());
+    my $got      = Math->lgamma(Math->PI);
     my $expected = 0.827694592323437101529578558452359951153501734120737316791;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1711,7 +1711,7 @@ class TestCase::Math {
 
   static method lgammaf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->lgammaf((float)Math->PI());
+    my $got      = Math->lgammaf((float)Math->PI);
     my $expected = 0.827694592323437101529578558452359951153501734120737316791f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1721,7 +1721,7 @@ class TestCase::Math {
 
   static method tgamma : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->tgamma(Math->PI());
+    my $got      = Math->tgamma(Math->PI);
     my $expected = 2.288037795340032417959588909060233922889688153356222441199;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1731,7 +1731,7 @@ class TestCase::Math {
 
   static method tgammaf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->tgammaf((float)Math->PI());
+    my $got      = Math->tgammaf((float)Math->PI);
     my $expected = 2.288037795340032417959588909060233922889688153356222441199f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -1740,7 +1740,7 @@ class TestCase::Math {
   }
 
   static method ceil : int () {
-    my $got      = Math->ceil(Math->PI());
+    my $got      = Math->ceil(Math->PI);
     my $expected = 4;
     unless ($got == $expected) {
       return 0;
@@ -1749,7 +1749,7 @@ class TestCase::Math {
   }
 
   static method ceilf : int () {
-    my $got      = Math->ceilf((float)Math->PI());
+    my $got      = Math->ceilf((float)Math->PI);
     my $expected = 4;
     unless ($got == $expected) {
       return 0;
@@ -1758,7 +1758,7 @@ class TestCase::Math {
   }
 
   static method floor : int () {
-    my $got      = Math->floor(Math->PI());
+    my $got      = Math->floor(Math->PI);
     my $expected = 3;
     unless ($got == $expected) {
       return 0;
@@ -1767,7 +1767,7 @@ class TestCase::Math {
   }
 
   static method floorf : int () {
-    my $got      = Math->floorf((float)Math->PI());
+    my $got      = Math->floorf((float)Math->PI);
     my $expected = 3;
     unless ($got == $expected) {
       return 0;
@@ -1781,14 +1781,14 @@ class TestCase::Math {
         die "failed to set fesetround(FE_DOWNWARD)";
       }
       {
-        my $got = Math->nearbyint(Math->PI());
+        my $got = Math->nearbyint(Math->PI);
         my $expected = 3;
         unless ($got == $expected) {
           return 0;
         }
       }
       {
-        my $got = Math->nearbyint(-Math->PI());
+        my $got = Math->nearbyint(-Math->PI);
         my $expected = -4;
         unless ($got == $expected) {
           return 0;
@@ -1800,14 +1800,14 @@ class TestCase::Math {
         die "failed to set fesetround(FE_TONEAREST)";
       }
       {
-        my $got = Math->nearbyint(Math->PI());
+        my $got = Math->nearbyint(Math->PI);
         my $expected = 3;
         unless ($got == $expected) {
           return 0;
         }
       }
       {
-        my $got = Math->nearbyint(Math->PI() * 4);
+        my $got = Math->nearbyint(Math->PI * 4);
         my $expected = 13;
         unless ($got == $expected) {
           return 0;
@@ -1819,14 +1819,14 @@ class TestCase::Math {
         die "failed to set fesetround(FE_TOWARDZERO)";
       }
       {
-        my $got = Math->nearbyint(Math->PI());
+        my $got = Math->nearbyint(Math->PI);
         my $expected = 3;
         unless ($got == $expected) {
           return 0;
         }
       }
       {
-        my $got = Math->nearbyint(-Math->PI());
+        my $got = Math->nearbyint(-Math->PI);
         my $expected = -3;
         unless ($got == $expected) {
           return 0;
@@ -1838,14 +1838,14 @@ class TestCase::Math {
         die "failed to set fesetround(FE_UPWARD)";
       }
       {
-        my $got = Math->nearbyint(Math->PI());
+        my $got = Math->nearbyint(Math->PI);
         my $expected = 4;
         unless ($got == $expected) {
           return 0;
         }
       }
       {
-        my $got = Math->nearbyint(-Math->PI());
+        my $got = Math->nearbyint(-Math->PI);
         my $expected = -3;
         unless ($got == $expected) {
           return 0;
@@ -1861,14 +1861,14 @@ class TestCase::Math {
         die "failed to set fesetround(FE_DOWNWARD)";
       }
       {
-        my $got = Math->nearbyintf((float)Math->PI());
+        my $got = Math->nearbyintf((float)Math->PI);
         my $expected = 3;
         unless ($got == $expected) {
           return 0;
         }
       }
       {
-        my $got = Math->nearbyintf((float)(-Math->PI()));
+        my $got = Math->nearbyintf((float)(-Math->PI));
         my $expected = -4;
         unless ($got == $expected) {
           return 0;
@@ -1880,14 +1880,14 @@ class TestCase::Math {
         die "failed to set fesetround(FE_TONEAREST)";
       }
       {
-        my $got = Math->nearbyintf((float)Math->PI());
+        my $got = Math->nearbyintf((float)Math->PI);
         my $expected = 3;
         unless ($got == $expected) {
           return 0;
         }
       }
       {
-        my $got = Math->nearbyintf((float)Math->PI() * 4);
+        my $got = Math->nearbyintf((float)Math->PI * 4);
         my $expected = 13;
         unless ($got == $expected) {
           return 0;
@@ -1899,14 +1899,14 @@ class TestCase::Math {
         die "failed to set fesetround(FE_TOWARDZERO)";
       }
       {
-        my $got = Math->nearbyintf((float)Math->PI());
+        my $got = Math->nearbyintf((float)Math->PI);
         my $expected = 3;
         unless ($got == $expected) {
           return 0;
         }
       }
       {
-        my $got = Math->nearbyintf((float)(-Math->PI()));
+        my $got = Math->nearbyintf((float)(-Math->PI));
         my $expected = -3;
         unless ($got == $expected) {
           return 0;
@@ -1918,14 +1918,14 @@ class TestCase::Math {
         die "failed to set fesetround(FE_UPWARD)";
       }
       {
-        my $got = Math->nearbyintf((float)Math->PI());
+        my $got = Math->nearbyintf((float)Math->PI);
         my $expected = 4;
         unless ($got == $expected) {
           return 0;
         }
       }
       {
-        my $got = Math->nearbyintf((float)(-Math->PI()));
+        my $got = Math->nearbyintf((float)(-Math->PI));
         my $expected = -3;
         unless ($got == $expected) {
           return 0;
@@ -1936,7 +1936,7 @@ class TestCase::Math {
   }
 
   static method round : int () {
-    my $got      = Math->round(Math->PI());
+    my $got      = Math->round(Math->PI);
     my $expected = 3;
     unless ($got == $expected) {
       return 0;
@@ -1945,7 +1945,7 @@ class TestCase::Math {
   }
 
   static method roundf : int () {
-    my $got      = Math->roundf((float)Math->PI());
+    my $got      = Math->roundf((float)Math->PI);
     my $expected = 3;
     unless ($got == $expected) {
       return 0;
@@ -1954,7 +1954,7 @@ class TestCase::Math {
   }
 
   static method lround : int () {
-    my $got      = Math->lround(Math->PI() * 1000000000);
+    my $got      = Math->lround(Math->PI * 1000000000);
     my $expected = 3141592654L;
     
     unless ($got == $expected) {
@@ -1964,7 +1964,7 @@ class TestCase::Math {
   }
 
   static method lroundf : int () {
-    my $got      = Math->lroundf((float)(Math->PI() * 100000));
+    my $got      = Math->lroundf((float)(Math->PI * 100000));
     my $expected = 314159L;
     unless ($got == $expected) {
       return 0;
@@ -1974,14 +1974,14 @@ class TestCase::Math {
 
   static method trunc : int () {
     {
-      my $got = Math->trunc(Math->PI() * 4);
+      my $got = Math->trunc(Math->PI * 4);
       my $expected = 12;
       unless ($got == $expected) {
         return 0;
       }
     }
     {
-      my $got = Math->trunc(-Math->PI() * 4);
+      my $got = Math->trunc(-Math->PI * 4);
       my $expected = -12;
       unless ($got == $expected) {
         return 0;
@@ -1992,14 +1992,14 @@ class TestCase::Math {
 
   static method truncf : int () {
     {
-      my $got = Math->truncf((float)(Math->PI() * 4));
+      my $got = Math->truncf((float)(Math->PI * 4));
       my $expected = 12;
       unless ($got == $expected) {
         return 0;
       }
     }
     {
-      my $got = Math->truncf((float)(-Math->PI() * 4));
+      my $got = Math->truncf((float)(-Math->PI * 4));
       my $expected = -12;
       unless ($got == $expected) {
         return 0;
@@ -2010,7 +2010,7 @@ class TestCase::Math {
 
   static method fmod : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->fmod(Math->PI(), 2.1);
+    my $got      = Math->fmod(Math->PI, 2.1);
     my $expected = 1.0415926535897932384626433832795028841971693993751058;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -2020,7 +2020,7 @@ class TestCase::Math {
 
   static method fmodf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->fmodf((float)Math->PI(), 2.1f);
+    my $got      = Math->fmodf((float)Math->PI, 2.1f);
     my $expected = 1.0415926535897932384626433832795028841971693993751058f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -2030,7 +2030,7 @@ class TestCase::Math {
 
   static method remainder : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->remainder(Math->PI(), 2.0);
+    my $got      = Math->remainder(Math->PI, 2.0);
     my $expected = -0.85840734641020688400;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -2040,7 +2040,7 @@ class TestCase::Math {
 
   static method remainderf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->remainderf((float)Math->PI(), 2.0f);
+    my $got      = Math->remainderf((float)Math->PI, 2.0f);
     my $expected = -0.85840734641020688400f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -2051,7 +2051,7 @@ class TestCase::Math {
   static method remquo : int () {
     my $eps           = 0.000000001;
     my $got_quo : int;
-    my $got           = Math->remquo(Math->PI(), 2.0, \$got_quo);
+    my $got           = Math->remquo(Math->PI, 2.0, \$got_quo);
     my $expected      = -0.85840734641020688400;
     my $expected_quo  = 2;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
@@ -2066,7 +2066,7 @@ class TestCase::Math {
   static method remquof : int () {
     my $eps           = 0.0001f;
     my $got_quo : int;
-    my $got           = Math->remquof((float)Math->PI(), 2.0f, \$got_quo);
+    my $got           = Math->remquof((float)Math->PI, 2.0f, \$got_quo);
     my $expected      = -0.85840734641020688400f;
     my $expected_quo  = 2;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
@@ -2081,32 +2081,32 @@ class TestCase::Math {
   static method copysign : int () {
     {
       my $eps = 0.000000001;
-      my $got = Math->copysign(Math->PI(), Math->PI());
-      my $expected = Math->PI();
+      my $got = Math->copysign(Math->PI, Math->PI);
+      my $expected = Math->PI;
       unless ($expected - $eps <= $got && $got <= $expected + $eps) {
         return 0;
       }
     }
     {
       my $eps = 0.000000001;
-      my $got = Math->copysign(-Math->PI(), Math->PI());
-      my $expected = Math->PI();
+      my $got = Math->copysign(-Math->PI, Math->PI);
+      my $expected = Math->PI;
       unless ($expected - $eps <= $got && $got <= $expected + $eps) {
         return 0;
       }
     }
     {
       my $eps = 0.000000001;
-      my $got = Math->copysign(Math->PI(), -Math->PI());
-      my $expected = -Math->PI();
+      my $got = Math->copysign(Math->PI, -Math->PI);
+      my $expected = -Math->PI;
       unless ($expected - $eps <= $got && $got <= $expected + $eps) {
         return 0;
       }
     }
     {
       my $eps = 0.000000001;
-      my $got = Math->copysign(-Math->PI(), -Math->PI());
-      my $expected = -Math->PI();
+      my $got = Math->copysign(-Math->PI, -Math->PI);
+      my $expected = -Math->PI;
       unless ($expected - $eps <= $got && $got <= $expected + $eps) {
         return 0;
       }
@@ -2117,32 +2117,32 @@ class TestCase::Math {
   static method copysignf : int () {
     {
       my $eps = 0.0001f;
-      my $got = Math->copysignf((float)(-Math->PI()), (float)Math->PI());
-      my $expected = (float)Math->PI();
+      my $got = Math->copysignf((float)(-Math->PI), (float)Math->PI);
+      my $expected = (float)Math->PI;
       unless ($expected - $eps <= $got && $got <= $expected + $eps) {
         return 0;
       }
     }
     {
       my $eps = 0.0001f;
-      my $got = Math->copysignf((float)(-Math->PI()), (float)Math->PI());
-      my $expected = (float)Math->PI();
+      my $got = Math->copysignf((float)(-Math->PI), (float)Math->PI);
+      my $expected = (float)Math->PI;
       unless ($expected - $eps <= $got && $got <= $expected + $eps) {
         return 0;
       }
     }
     {
       my $eps = 0.0001f;
-      my $got = Math->copysignf((float)(-Math->PI()), (float)(-Math->PI()));
-      my $expected = (float)(-Math->PI());
+      my $got = Math->copysignf((float)(-Math->PI), (float)(-Math->PI));
+      my $expected = (float)(-Math->PI);
       unless ($expected - $eps <= $got && $got <= $expected + $eps) {
         return 0;
       }
     }
     {
       my $eps = 0.0001f;
-      my $got = Math->copysignf((float)(-Math->PI()), (float)(-Math->PI()));
-      my $expected = (float)(-Math->PI());
+      my $got = Math->copysignf((float)(-Math->PI), (float)(-Math->PI));
+      my $expected = (float)(-Math->PI);
       unless ($expected - $eps <= $got && $got <= $expected + $eps) {
         return 0;
       }
@@ -2179,7 +2179,7 @@ class TestCase::Math {
   }
   static method nextafter : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->nextafter(Math->PI(), 10.0);
+    my $got      = Math->nextafter(Math->PI, 10.0);
     my $expected = 3.141592653589793560087173318606801331043243408203125;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -2189,7 +2189,7 @@ class TestCase::Math {
 
   static method nextafterf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->nextafterf((float)Math->PI(), 10.0f);
+    my $got      = Math->nextafterf((float)Math->PI, 10.0f);
     my $expected = 3.141592653589793560087173318606801331043243408203125f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -2198,7 +2198,7 @@ class TestCase::Math {
   }
   static method nexttoward : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->nexttoward(Math->PI(), 10.0);
+    my $got      = Math->nexttoward(Math->PI, 10.0);
     my $expected = 3.141592653589793560087173318606801331043243408203125;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -2208,7 +2208,7 @@ class TestCase::Math {
 
   static method nexttowardf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->nexttowardf((float)Math->PI(), 10.0f);
+    my $got      = Math->nexttowardf((float)Math->PI, 10.0f);
     my $expected = 3.141592653589793560087173318606801331043243408203125f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -2219,14 +2219,14 @@ class TestCase::Math {
   static method fdim : int () {
     {
       my $eps = 0.000000001;
-      my $got = Math->fdim(Math->PI(), Math->PI() / 2);
+      my $got = Math->fdim(Math->PI, Math->PI / 2);
       my $expected = 1.5707963267948965579989817342720925807952880859375;
       unless ($expected - $eps <= $got && $got <= $expected + $eps) {
         return 0;
       }
     }
     {
-      my $got = Math->fdim(Math->PI() / 2, Math->PI());
+      my $got = Math->fdim(Math->PI / 2, Math->PI);
       my $expected = 0;
       unless ($got == $expected) {
         return 0;
@@ -2238,7 +2238,7 @@ class TestCase::Math {
   static method fdimf : int () {
     {
       my $eps      = 0.0001f;
-      my $got      = Math->fdimf((float)Math->PI(), (float)Math->PI() / 2);
+      my $got      = Math->fdimf((float)Math->PI, (float)Math->PI / 2);
       my $expected = 1.5707963267948965579989817342720925807952880859375f;
       unless ($expected - $eps <= $got && $got <= $expected + $eps) {
         return 0;
@@ -2246,7 +2246,7 @@ class TestCase::Math {
       return 1;
     }
     {
-      my $got      = Math->fdimf((float)Math->PI() / 2, (float)Math->PI());
+      my $got      = Math->fdimf((float)Math->PI / 2, (float)Math->PI);
       my $expected = 0;
       unless ($got == $expected) {
         return 0;
@@ -2257,8 +2257,8 @@ class TestCase::Math {
 
   static method fmax : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->fmax(Math->PI(), Math->PI() / 2);
-    my $expected = Math->PI();
+    my $got      = Math->fmax(Math->PI, Math->PI / 2);
+    my $expected = Math->PI;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -2267,8 +2267,8 @@ class TestCase::Math {
 
   static method fmaxf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->fmaxf((float)Math->PI(), (float)Math->PI() / 2);
-    my $expected = (float)Math->PI();
+    my $got      = Math->fmaxf((float)Math->PI, (float)Math->PI / 2);
+    my $expected = (float)Math->PI;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -2277,8 +2277,8 @@ class TestCase::Math {
 
   static method fmin : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->fmin(Math->PI(), Math->PI() / 2);
-    my $expected = Math->PI() / 2;
+    my $got      = Math->fmin(Math->PI, Math->PI / 2);
+    my $expected = Math->PI / 2;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -2287,8 +2287,8 @@ class TestCase::Math {
 
   static method fminf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->fminf((float)Math->PI(), (float)Math->PI() / 2);
-    my $expected = (float)Math->PI() / 2f;
+    my $got      = Math->fminf((float)Math->PI, (float)Math->PI / 2);
+    my $expected = (float)Math->PI / 2f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
     }
@@ -2297,7 +2297,7 @@ class TestCase::Math {
 
   static method fma : int () {
     my $eps      = 0.000000001;
-    my $got      = Math->fma(Math->PI(), Math->PI() / 2, Math->PI() / 3);
+    my $got      = Math->fma(Math->PI, Math->PI / 2, Math->PI / 3);
     my $expected = 5.98199975174127640542565131909213960170745849609375;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
@@ -2307,7 +2307,7 @@ class TestCase::Math {
 
   static method fmaf : int () {
     my $eps      = 0.0001f;
-    my $got      = Math->fmaf((float)Math->PI(), (float)Math->PI() / 2, (float)Math->PI() / 3);
+    my $got      = Math->fmaf((float)Math->PI, (float)Math->PI / 2, (float)Math->PI / 3);
     my $expected = 5.98199975174127640542565131909213960170745849609375f;
     unless ($expected - $eps <= $got && $got <= $expected + $eps) {
       return 0;
