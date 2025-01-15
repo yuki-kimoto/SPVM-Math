@@ -1109,8 +1109,16 @@ int32_t SPVM__Math__fpclassifyf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__frexp(SPVM_ENV* env, SPVM_VALUE* stack) {
-
-  double ret = frexp(stack[0].dval, stack[1].iref);
+  
+  double x = stack[0].dval;
+  
+  int32_t* exp_ref = stack[1].iref;
+  
+  if (!exp_ref) {
+    return env->die(env, stack, "The reference of the exponent $exp_ref must be defined.", __func__, MFILE, __LINE__);
+  }
+  
+  double ret = frexp(x, exp_ref);
   
   stack[0].dval = ret;
   

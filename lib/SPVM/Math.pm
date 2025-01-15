@@ -708,9 +708,13 @@ Calls L<fpclassify|https://linux.die.net/man/3/fpclassify> function defined in C
 
 =head2 frexp
 
-C<static method frexp : double ($x : double, $exp : int*);>
+C<static method frexp : double ($x : double, $exp_ref : int*);>
 
 Calls L<frexp|https://linux.die.net/man/3/frexp> function defined in C<math.h> in the C language and returns its return value.
+
+Exceptions:
+
+The reference of the exponent $exp_ref must be defined. Otherwise an exception is thrown.
 
 =head2 frexpf
 

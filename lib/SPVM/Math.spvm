@@ -293,7 +293,7 @@ class Math : precompile {
   
   native static method fpclassifyf : int ($x : float);
   
-  native static method frexp : double ($x : double, $exp : int*);
+  native static method frexp : double ($x : double, $exp_ref : int*);
   
   native static method frexpf : float ($x : float, $exp : int*);
   
