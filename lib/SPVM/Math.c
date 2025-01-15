@@ -771,14 +771,13 @@ int32_t SPVM__Math__ctanf(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__ctanh(SPVM_ENV* env, SPVM_VALUE* stack) {
-
+  
   double re = stack[0].dval;
   double im = stack[1].dval;
   
   double complex z = re + im * _Complex_I;
   
-  // In some mac OS, ctanh can't right ret, so I calcurate from definition
-  double complex z_ret = csinh(z) / ccosh(z);
+  double complex z_ret = ctanh(z);
   
   stack[0].dval = creal(z_ret);
   stack[1].dval = cimag(z_ret);
@@ -787,14 +786,13 @@ int32_t SPVM__Math__ctanh(SPVM_ENV* env, SPVM_VALUE* stack) {
 }
 
 int32_t SPVM__Math__ctanhf(SPVM_ENV* env, SPVM_VALUE* stack) {
-
+  
   float re = stack[0].fval;
   float im = stack[1].fval;
   
   float complex z = re + im * _Complex_I;
   
-  // In some mac OS, ctanh can't right ret, so I calcurate from definition
-  float complex z_ret = csinhf(z) / ccoshf(z);
+  float complex z_ret = ctanhf(z);
   
   stack[0].fval = crealf(z_ret);
   stack[1].fval = cimagf(z_ret);

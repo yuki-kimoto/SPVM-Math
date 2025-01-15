@@ -10,6 +10,9 @@
     * Math#modff method throws an exception if $intpart_ref is not defined.
     * Math#remquo method throws an exception if $quo_ref is not defined.
     * Math#remquof method throws an exception if $quo_ref is not defined.
+  [Internal Chnages]
+    * Use native ctanh function in Math#ctanh method.
+    * Use native ctanh function in Math#ctanhf method.
     
 1.004001  2024-08-26
   [Test Improvement]
