@@ -38,16 +38,18 @@ my $nan_re = qr/(nan|ind)/i;
 # These tests are for SPVM core, not for Math class.
 # The reason is that it's a lot of work to write tests for NaN and Inf in SPVM core.
 
-# Start objects count
-my $start_memory_blocks_count = SPVM::api->get_memory_blocks_count();
+my $api = SPVM::api();
+
+my $start_memory_blocks_count = $api->get_memory_blocks_count;
 
 ok(SPVM::TestCase::Math->spvm_core_double_to_string_nan);
 ok(SPVM::TestCase::Math->spvm_core_double_to_string_inf);
 ok(SPVM::TestCase::Math->spvm_core_float_to_string_nan);
 ok(SPVM::TestCase::Math->spvm_core_float_to_string_inf);
 
-# All object is freed
-my $end_memory_blocks_count = SPVM::api->get_memory_blocks_count();
+SPVM::Fn->destroy_runtime_permanent_vars;
+
+my $end_memory_blocks_count = $api->get_memory_blocks_count;
 is($end_memory_blocks_count, $start_memory_blocks_count);
 
 done_testing;

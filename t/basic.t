@@ -35,10 +35,9 @@ my $NaN = 9**9**9 / 9**9**9;
 
 my $nan_re = qr/(nan|ind)/i;
 
+my $api = SPVM::api();
 
-
-# Start objects count
-my $start_memory_blocks_count = SPVM::api->get_memory_blocks_count();
+my $start_memory_blocks_count = $api->get_memory_blocks_count;
 
 # PI
 {
@@ -296,8 +295,10 @@ ok(SPVM::TestCase::Math->isunorderedf);
 {
   is($SPVM::Math::VERSION, SPVM::Fn->get_version_string('Math'));
 }
-# All object is freed
-my $end_memory_blocks_count = SPVM::api->get_memory_blocks_count();
+
+SPVM::Fn->destroy_runtime_permanent_vars;
+
+my $end_memory_blocks_count = $api->get_memory_blocks_count;
 is($end_memory_blocks_count, $start_memory_blocks_count);
 
 done_testing;
