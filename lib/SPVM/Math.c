@@ -1113,7 +1113,7 @@ int32_t SPVM__Math__frexp(SPVM_ENV* env, SPVM_VALUE* stack) {
   int32_t* exp_ref = stack[1].iref;
   
   if (!exp_ref) {
-    return env->die(env, stack, "The reference of the exponent $exp_ref must be defined.", __func__, MFILE, __LINE__);
+    return env->die_v2(env, stack, "The reference of the exponent $exp_ref must be defined.", __func__, MFILE, __LINE__);
   }
   
   int exp_tmp;
@@ -1132,7 +1132,7 @@ int32_t SPVM__Math__frexpf(SPVM_ENV* env, SPVM_VALUE* stack) {
   int32_t* exp_ref = stack[1].iref;
   
   if (!exp_ref) {
-    return env->die(env, stack, "The reference of the exponent $exp_ref must be defined.", __func__, MFILE, __LINE__);
+    return env->die_v2(env, stack, "The reference of the exponent $exp_ref must be defined.", __func__, MFILE, __LINE__);
   }
   
   int exp_tmp;
@@ -1521,7 +1521,7 @@ int32_t SPVM__Math__modf(SPVM_ENV* env, SPVM_VALUE* stack) {
   double* intpart_ref = stack[1].dref;
   
   if (!intpart_ref) {
-    return env->die(env, stack, "The reference of the integer part $intpart_ref must be defined.", __func__, MFILE, __LINE__);
+    return env->die_v2(env, stack, "The reference of the integer part $intpart_ref must be defined.", __func__, MFILE, __LINE__);
   }
   
   double ret = modf(x, intpart_ref);
@@ -1538,7 +1538,7 @@ int32_t SPVM__Math__modff(SPVM_ENV* env, SPVM_VALUE* stack) {
   float* intpart_ref = stack[1].fref;
   
   if (!intpart_ref) {
-    return env->die(env, stack, "The reference of the integer part $intpart_ref must be defined.", __func__, MFILE, __LINE__);
+    return env->die_v2(env, stack, "The reference of the integer part $intpart_ref must be defined.", __func__, MFILE, __LINE__);
   }
   
   float ret = modff(x, intpart_ref);
@@ -1552,7 +1552,7 @@ int32_t SPVM__Math__nan(SPVM_ENV* env, SPVM_VALUE* stack) {
   
   void* string = stack[0].oval;
   if (!string) {
-    return env->die(env, stack, "String must be defined.", __func__, MFILE, __LINE__);
+    return env->die_v2(env, stack, "String must be defined.", __func__, MFILE, __LINE__);
   }
   
   const char* tagp = env->get_chars(env, stack, string);
@@ -1574,7 +1574,7 @@ int32_t SPVM__Math__nanf(SPVM_ENV* env, SPVM_VALUE* stack) {
   
   void* string = stack[0].oval;
   if (!string) {
-    return env->die(env, stack, "String must be defined.", __func__, MFILE, __LINE__);
+    return env->die_v2(env, stack, "String must be defined.", __func__, MFILE, __LINE__);
   }
   
   const char* tagp = env->get_chars(env, stack, string);
@@ -1691,7 +1691,7 @@ int32_t SPVM__Math__remquo(SPVM_ENV* env, SPVM_VALUE* stack) {
   int32_t* quo_ref = stack[2].iref;
   
   if (!quo_ref) {
-    return env->die(env, stack, "The reference of the quotient part $quo_ref must be defined.", __func__, MFILE, __LINE__);
+    return env->die_v2(env, stack, "The reference of the quotient part $quo_ref must be defined.", __func__, MFILE, __LINE__);
   }
   
   int quo_tmp;
@@ -1712,7 +1712,7 @@ int32_t SPVM__Math__remquof(SPVM_ENV* env, SPVM_VALUE* stack) {
   int32_t* quo_ref = stack[2].iref;
   
   if (!quo_ref) {
-    return env->die(env, stack, "The reference of the quotient part $quo_ref must be defined.", __func__, MFILE, __LINE__);
+    return env->die_v2(env, stack, "The reference of the quotient part $quo_ref must be defined.", __func__, MFILE, __LINE__);
   }
   
   int quo_tmp;
