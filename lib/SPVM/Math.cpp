@@ -5,10 +5,14 @@
 
 #include <math.h>
 #include <fenv.h>
-#include <complex.h>
 
-static const char* MFILE = "SPVM/Math.c";
+// C++ headers
+#include <complex>
+#include <cmath>
 
+static const char* MFILE = "SPVM/Math.cpp";
+
+extern "C" {
 int32_t SPVM__Math__acos(SPVM_ENV* env, SPVM_VALUE* stack) {
   
   double ret = acos(stack[0].dval);
@@ -140,9 +144,9 @@ int32_t SPVM__Math__cabs(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double z_ret = cabs(z);
+  double z_ret = std::abs(z);
   
   stack[0].dval = z_ret;
   
@@ -154,9 +158,9 @@ int32_t SPVM__Math__cabsf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float z_ret = cabsf(z);
+  float z_ret = std::abs(z);
   
   stack[0].fval = z_ret;
   
@@ -168,12 +172,12 @@ int32_t SPVM__Math__cacos(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = cacos(z);
+  std::complex<double> z_ret = std::acos(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -183,12 +187,12 @@ int32_t SPVM__Math__cacosf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = cacosf(z);
+  std::complex<float> z_ret = std::acos(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -198,12 +202,12 @@ int32_t SPVM__Math__cacosh(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = cacosh(z);
+  std::complex<double> z_ret = std::acosh(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -213,12 +217,12 @@ int32_t SPVM__Math__cacoshf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = cacoshf(z);
+  std::complex<float> z_ret = std::acosh(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -228,11 +232,11 @@ int32_t SPVM__Math__carg(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double z_ret = carg(z);
+  double z_ret = std::arg(z);
   
-  stack[0].dval = creal(z_ret);
+  stack[0].dval = z_ret;
   
   return 0;
 }
@@ -242,9 +246,9 @@ int32_t SPVM__Math__cargf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float z_ret = cargf(z);
+  float z_ret = std::arg(z);
   
   stack[0].fval = z_ret;
   
@@ -256,12 +260,12 @@ int32_t SPVM__Math__casin(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = casin(z);
+  std::complex<double> z_ret = std::asin(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -271,12 +275,12 @@ int32_t SPVM__Math__casinf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = casinf(z);
+  std::complex<float> z_ret = std::asin(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -286,12 +290,12 @@ int32_t SPVM__Math__casinh(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = casinh(z);
+  std::complex<double> z_ret = std::asinh(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -301,12 +305,12 @@ int32_t SPVM__Math__casinhf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = casinhf(z);
+  std::complex<float> z_ret = std::asinh(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -316,12 +320,12 @@ int32_t SPVM__Math__catan(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = catan(z);
+  std::complex<double> z_ret = std::atan(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -331,12 +335,12 @@ int32_t SPVM__Math__catanf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = catanf(z);
+  std::complex<float> z_ret = std::atan(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -346,12 +350,12 @@ int32_t SPVM__Math__catanh(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = catanh(z);
+  std::complex<double> z_ret = std::atanh(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -361,12 +365,12 @@ int32_t SPVM__Math__catanhf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = catanhf(z);
+  std::complex<float> z_ret = std::atanh(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -394,12 +398,12 @@ int32_t SPVM__Math__ccos(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = ccos(z);
+  std::complex<double> z_ret = std::cos(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -409,12 +413,12 @@ int32_t SPVM__Math__ccosf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = ccosf(z);
+  std::complex<float> z_ret = std::cos(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -424,12 +428,12 @@ int32_t SPVM__Math__ccosh(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = ccosh(z);
+  std::complex<double> z_ret = std::cosh(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -439,12 +443,12 @@ int32_t SPVM__Math__ccoshf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = ccoshf(z);
+  std::complex<float> z_ret = std::cosh(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -472,12 +476,12 @@ int32_t SPVM__Math__cexp(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = cexp(z);
+  std::complex<double> z_ret = std::exp(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -487,12 +491,12 @@ int32_t SPVM__Math__cexpf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = cexpf(z);
+  std::complex<float> z_ret = std::exp(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -502,12 +506,12 @@ int32_t SPVM__Math__clog(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = clog(z);
+  std::complex<double> z_ret = std::log(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -517,12 +521,12 @@ int32_t SPVM__Math__clogf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = clogf(z);
+  std::complex<float> z_ret = std::log(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -532,12 +536,12 @@ int32_t SPVM__Math__conj(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = conj(z);
+  std::complex<double> z_ret = std::conj(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -547,15 +551,16 @@ int32_t SPVM__Math__conjf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = conjf(z);
+  std::complex<float> z_ret = std::conj(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
+
 int32_t SPVM__Math__copysign(SPVM_ENV* env, SPVM_VALUE* stack) {
   
   double ret = copysign(stack[0].dval, stack[1].dval);
@@ -618,14 +623,13 @@ int32_t SPVM__Math__cpow(SPVM_ENV* env, SPVM_VALUE* stack) {
   double x_pow = stack[2].dval;
   double y_pow = stack[3].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
+  std::complex<double> z_pow(x_pow, y_pow);
   
-  double complex z_pow = x_pow + y_pow * _Complex_I;
+  std::complex<double> z_ret = std::pow(z, z_pow);
   
-  double complex z_ret = cpow(z, z_pow);
-  
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -638,14 +642,13 @@ int32_t SPVM__Math__cpowf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float x_pow = stack[2].fval;
   float y_pow = stack[3].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
+  std::complex<float> z_pow(x_pow, y_pow);
   
-  float complex z_pow = x_pow + y_pow * _Complex_I;
+  std::complex<float> z_ret = std::pow(z, z_pow);
   
-  float complex z_ret = cpowf(z, z_pow);
-  
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -655,12 +658,12 @@ int32_t SPVM__Math__csin(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = csin(z);
+  std::complex<double> z_ret = std::sin(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -670,12 +673,12 @@ int32_t SPVM__Math__csinf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = csinf(z);
+  std::complex<float> z_ret = std::sin(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -685,12 +688,12 @@ int32_t SPVM__Math__csinh(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = csinh(z);
+  std::complex<double> z_ret = std::sinh(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -700,12 +703,12 @@ int32_t SPVM__Math__csinhf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = csinhf(z);
+  std::complex<float> z_ret = std::sinh(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -715,12 +718,12 @@ int32_t SPVM__Math__csqrt(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = csqrt(z);
+  std::complex<double> z_ret = std::sqrt(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -730,12 +733,12 @@ int32_t SPVM__Math__csqrtf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = csqrtf(z);
+  std::complex<float> z_ret = std::sqrt(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -745,12 +748,12 @@ int32_t SPVM__Math__ctan(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = ctan(z);
+  std::complex<double> z_ret = std::tan(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -760,12 +763,12 @@ int32_t SPVM__Math__ctanf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = ctanf(z);
+  std::complex<float> z_ret = std::tan(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -775,12 +778,12 @@ int32_t SPVM__Math__ctanh(SPVM_ENV* env, SPVM_VALUE* stack) {
   double re = stack[0].dval;
   double im = stack[1].dval;
   
-  double complex z = re + im * _Complex_I;
+  std::complex<double> z(re, im);
   
-  double complex z_ret = ctanh(z);
+  std::complex<double> z_ret = std::tanh(z);
   
-  stack[0].dval = creal(z_ret);
-  stack[1].dval = cimag(z_ret);
+  stack[0].dval = z_ret.real();
+  stack[1].dval = z_ret.imag();
   
   return 0;
 }
@@ -790,12 +793,12 @@ int32_t SPVM__Math__ctanhf(SPVM_ENV* env, SPVM_VALUE* stack) {
   float re = stack[0].fval;
   float im = stack[1].fval;
   
-  float complex z = re + im * _Complex_I;
+  std::complex<float> z(re, im);
   
-  float complex z_ret = ctanhf(z);
+  std::complex<float> z_ret = std::tanh(z);
   
-  stack[0].fval = crealf(z_ret);
-  stack[1].fval = cimagf(z_ret);
+  stack[0].fval = z_ret.real();
+  stack[1].fval = z_ret.imag();
   
   return 0;
 }
@@ -1921,3 +1924,5 @@ int32_t SPVM__Math__truncf(SPVM_ENV* env, SPVM_VALUE* stack) {
   
   return 0;
 }
+
+} // extern "C"
