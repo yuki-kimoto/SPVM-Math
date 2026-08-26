@@ -10,7 +10,7 @@
 Changes
 examples/complex/complex.pl
 examples/complex/lib/SPVM/MyComplex.spvm
-lib/SPVM/Math.config
+lib/SPVM/Math.build
 lib/SPVM/Math.cpp
 lib/SPVM/Math.pm
 lib/SPVM/Math.spvm
