@@ -1,6 +1,6 @@
 package SPVM::Math;
 
-our $VERSION = "1.011";
+our $VERSION = "1.012";
 
 1;
 
@@ -10,7 +10,7 @@ SPVM::Math - Mathematical Calculations
 
 =head1 Description
 
-Math class in L<SPVM> has methods for mathematical calculations defined in C<math.h> and C<complex.h> in the C language.
+Math class in L<SPVM> provides mathematical calculations defined in C<math.h> and C<complex.h> in the C language.
 
 =head1 Usage
 
