@@ -2,7 +2,7 @@
 # MIT License
 
 class Math {
-  version "1.012";
+  version "1.013";
   
   use Complex_2f;
   use Complex_2d;
